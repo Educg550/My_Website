@@ -19,7 +19,11 @@ import {
   InfoBox,
   ProfilePicture,
   ProgrammingIcons,
+  ButtonsContainer,
 } from "./styles";
+import { Button } from "../Button";
+import { OutlineButton } from "../OutlineButton";
+import { Text } from "../Text";
 
 export const ProfileInfo = () => {
   const lottieOptions = {
@@ -55,6 +59,15 @@ export const ProfileInfo = () => {
             <DiJava size={36} />
           </ProgrammingIcons>
         </IconsContainer>
+
+        <ButtonsContainer>
+          <Button>
+            <Text>Currículo</Text>
+          </Button>
+          <OutlineButton>
+            <Text>Blog</Text>
+          </OutlineButton>
+        </ButtonsContainer>
 
         <Lottie options={lottieOptions} height={400} width={400} />
       </InfoBox>

@@ -8,6 +8,8 @@ import {
   AiOutlineInstagram,
 } from "react-icons/ai";
 
+import { BsMoonStars, BsSun } from "react-icons/bs";
+
 import Link from "next/link";
 
 import Switch from "react-switch";
@@ -45,8 +47,27 @@ export const Header: React.FC<HeaderProps> = ({ toggleTheme }) => {
         <Switch
           onChange={toggleTheme}
           checked={title === "dark"}
-          checkedIcon={false}
-          uncheckedIcon={false}
+          uncheckedIcon={
+            <BsMoonStars
+              color={colors.background}
+              style={{
+                padding: 3,
+                height: "100%",
+                width: "100%",
+              }}
+            />
+          }
+          checkedIcon={
+            <BsSun
+              size={10}
+              color={colors.background}
+              style={{
+                padding: 3,
+                height: "100%",
+                width: "100%",
+              }}
+            />
+          }
           height={36}
           offColor={colors.text}
           onColor={colors.text}

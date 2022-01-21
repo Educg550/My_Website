@@ -38,6 +38,11 @@ export const IconsContainer = styled.div`
   gap: 1rem;
 `;
 
+export const ButtonsContainer = styled.div`
+  display: flex;
+  gap: 0.75rem;
+`;
+
 export const ProfilePicture = styled.img`
   width: 25rem;
   height: 25rem;
