@@ -1,6 +1,5 @@
 import { Title } from "../Title";
-import { GraySubTitle } from "../GraySubTitle";
-import styles from "./styles.module.scss";
+import { GraySubtitle } from "../GraySubtitle";
 import Lottie from "react-lottie";
 import programming from "../../public/lotties/programming.json";
 import {
@@ -14,6 +13,14 @@ import {
 } from "react-icons/di";
 import { SiTypescript, SiJavascript } from "react-icons/si";
 
+import {
+  Container,
+  IconsContainer,
+  InfoBox,
+  ProfilePicture,
+  ProgrammingIcons,
+} from "./styles";
+
 export const ProfileInfo = () => {
   const lottieOptions = {
     loop: true,
@@ -25,29 +32,32 @@ export const ProfileInfo = () => {
   };
 
   return (
-    <div className={styles.container}>
-      <img
-        src="https://avatars.githubusercontent.com/u/47800334"
-        className={styles.profilePicture}
-      />
+    <Container>
+      <ProfilePicture src="https://avatars.githubusercontent.com/u/47800334" />
 
-      <div className="infoBox">
-        <Title>Olá, eu sou o Eduardo!</Title>
-        <GraySubTitle>
+      <InfoBox>
+        <Title>Olá, eu sou o Eduardo! 👋</Title>
+        <GraySubtitle>
           Um dev focado em Front-end que busca ultrapassar suas fronteiras 💪
-        </GraySubTitle>
-        <div className="programmingIcons">
-          <DiReact size={36} />
-          <DiHtml5 size={36} />
-          <DiCss3 size={36} />
-          <SiTypescript size={36} /> <SiJavascript size={36} />
-          <DiPhp size={36} />
-          <DiNodejsSmall size={36} />
-          <DiMysql size={36} />
-          <DiJava size={36} />
-        </div>
+        </GraySubtitle>
+        <IconsContainer>
+          <ProgrammingIcons>
+            <DiReact size={36} />
+            <DiHtml5 size={36} />
+            <DiCss3 size={36} />
+            <SiTypescript size={36} />
+            <SiJavascript size={36} />
+          </ProgrammingIcons>
+          <ProgrammingIcons>
+            <DiPhp size={36} />
+            <DiNodejsSmall size={36} />
+            <DiMysql size={36} />
+            <DiJava size={36} />
+          </ProgrammingIcons>
+        </IconsContainer>
+
         <Lottie options={lottieOptions} height={400} width={400} />
-      </div>
-    </div>
+      </InfoBox>
+    </Container>
   );
 };

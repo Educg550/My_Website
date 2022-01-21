@@ -7,8 +7,7 @@ My personal website made with ReactJS, Next.js and TypeScript
 - ⚛️ ReactJS - Framework for creating modern, fluid and responsive design interfaces on multiple devices, using TypeScript;
 - 🇳 NextJS - React framework for considerable improvement in page structure and to facilitate indexing and server side rendering (SSR);
 - 💙 TypeScript - A strongly typed programming language that builds on JavaScript, giving better tools at any scale on applications;
-- 👓 Sass - The most mature, stable, and powerful professional grade CSS extension language, used for styling the main components and pages;
-- 💅 Styled Components - enhanced CSS for styling React component systems, used for styling components too.
+- 💅 Styled Components - enhanced CSS for styling React component systems, used for styling the main components and pages.
 
 ## Getting Started
 

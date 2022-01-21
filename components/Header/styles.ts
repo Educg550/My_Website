@@ -8,6 +8,7 @@ export const Container = styled.div`
   max-height: 6.25rem;
 
   justify-content: space-between;
+  align-items: center;
 `;
 
 export const IconBox = styled.div`
@@ -22,5 +23,5 @@ export const HeaderTitle = styled.h2`
 
   line-height: 0;
 
-  color: var(--gray);
+  color: ${(props) => props.theme.colors.gray};
 `;
