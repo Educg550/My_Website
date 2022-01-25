@@ -7,7 +7,7 @@ export const Container = styled.div`
   margin-top: 5rem;
   gap: 4rem;
 
-  max-width: 46rem;
+  max-width: 100%;
   align-self: center;
 `;
 
@@ -15,11 +15,8 @@ export const InfoBox = styled.div`
   display: flex;
   flex-direction: column;
 
-  &:nth-child(2) {
-    margin-bottom: 10rem;
-  }
-
-  gap: 2rem;
+  gap: 1.5rem;
+  flex: 0.5;
 
   justify-content: center;
 `;
@@ -48,5 +45,7 @@ export const ProfilePicture = styled.img`
   height: 25rem;
   border-radius: 12.5rem;
 
-  border: 3px solid black;
+  border: 3.5px solid
+    ${(props) =>
+      props.theme.title === "dark" ? props.theme.colors.primary : "black"};
 `;

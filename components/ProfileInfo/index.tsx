@@ -38,7 +38,6 @@ export const ProfileInfo = () => {
   return (
     <Container>
       <ProfilePicture src="https://avatars.githubusercontent.com/u/47800334" />
-
       <InfoBox>
         <Title>Olá, eu sou o Eduardo! 👋</Title>
         <GraySubtitle>
@@ -68,7 +67,6 @@ export const ProfileInfo = () => {
             <Text>Blog</Text>
           </OutlineButton>
         </ButtonsContainer>
-
         <Lottie options={lottieOptions} height={400} width={400} />
       </InfoBox>
     </Container>

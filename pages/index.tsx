@@ -2,10 +2,12 @@ import type { NextPage } from "next";
 import usePersistedState from "../utils/usePersistedState";
 
 import Head from "next/head";
-import Image from "next/image";
 import { Container } from "../styles/home";
 import { Header } from "../components/Header";
 import { ProfileInfo } from "../components/ProfileInfo";
+import { ContentHolder } from "../components/ContentHolder";
+
+import { Text } from "../components/Text";
 
 import GlobalStyle from "../styles/global";
 import { ThemeProvider, DefaultTheme } from "styled-components";
@@ -19,6 +21,8 @@ const Home: NextPage = () => {
     setTheme(theme.title === "light" ? dark : light);
   };
 
+  const textFormat = { textIndent: 25, color: "#222" };
+
   return (
     <ThemeProvider theme={theme}>
       <Container>
@@ -31,6 +35,39 @@ const Home: NextPage = () => {
 
         <Header toggleTheme={toggleTheme} />
         <ProfileInfo />
+
+        <ContentHolder title="✍️ Sobre mim">
+          <Text style={textFormat}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            sit amet urna nec magna suscipit rhoncus. Nulla facilisi. Morbi quis
+            dui vel est vehicula rhoncus id id dui. Integer sagittis magna erat,
+            sit amet vulputate felis laoreet non. Donec vulputate molestie leo
+            et interdum. Suspendisse potenti. Vivamus volutpat luctus justo
+            vitae ullamcorper.
+          </Text>
+
+          <Text style={textFormat}>
+            Maecenas et lacinia sapien. Vivamus mauris enim, interdum sit amet
+            erat in, efficitur varius purus. Nulla facilisi. Aliquam sodales
+            mattis fermentum. Nulla ut ipsum non diam lobortis pharetra luctus
+            aliquet tellus. Sed a scelerisque mauris. Nunc imperdiet porta odio.
+            Sed eleifend neque vitae nunc tristique fermentum. Aliquam consequat
+            aliquam efficitur. Integer mattis mi sed ante elementum viverra. Sed
+            varius purus metus, ut molestie ligula laoreet a. Mauris fermentum
+            justo et pellentesque efficitur. Morbi risus ante, euismod ac tortor
+            a, fermentum hendrerit mauris.
+          </Text>
+
+          <Text style={textFormat}>
+            Nunc laoreet sodales tortor, a imperdiet risus venenatis a. Aenean
+            posuere dolor sit amet lorem efficitur ornare. Sed vitae enim
+            tincidunt, semper diam sed, elementum tellus. Morbi in neque eu est
+            lacinia tempor sit amet sit amet enim. Nullam cursus lorem lacus,
+            nec sollicitudin diam congue id. Donec a justo nec nibh aliquet
+            lobortis. Integer at ligula ac justo blandit congue et vel orci.
+            Mauris efficitur lacus eu urna lobortis, a semper quam fringilla.
+          </Text>
+        </ContentHolder>
       </Container>
     </ThemeProvider>
   );

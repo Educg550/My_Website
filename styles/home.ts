@@ -5,11 +5,17 @@ export const Container = styled.div`
   flex-direction: column;
 
   justify-content: center;
+  background-color: ${(props) => props.theme.colors.background};
 
-  margin: 2.25rem;
+  ${(props) =>
+    props.theme.title === "dark" &&
+    `
+      background: url(/images/mainBackground.png) no-repeat;
+  `}
+
+  padding: 2.25rem 2.25rem 0 2.25rem;
 
   @media (max-width: 768px) {
     width: 100%;
-    flex-direction: column;
   }
 `;
