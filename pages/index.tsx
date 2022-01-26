@@ -5,6 +5,7 @@ import Head from "next/head";
 import { Container } from "../styles/home";
 import { Header } from "../components/Header";
 import { ProfileInfo } from "../components/ProfileInfo";
+import { UtilitiesInfo } from "../components/UtilitiesInfo";
 import { ContentHolder } from "../components/ContentHolder";
 
 import { Text } from "../components/Text";
@@ -34,7 +35,9 @@ const Home: NextPage = () => {
         <GlobalStyle />
 
         <Header toggleTheme={toggleTheme} />
+
         <ProfileInfo />
+        <UtilitiesInfo />
 
         <ContentHolder title="✍️ Sobre mim">
           <Text style={textFormat}>

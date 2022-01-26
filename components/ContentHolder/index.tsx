@@ -17,7 +17,7 @@ export const ContentHolder: React.FC<ContentHolderProps> = ({
   return (
     <Container>
       <TitleBox>
-        <Title color={colors.light}>{title}</Title>
+        <Title style={{ color: colors.light }}>{title}</Title>
       </TitleBox>
       {children}
     </Container>

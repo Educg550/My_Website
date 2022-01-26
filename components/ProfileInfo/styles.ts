@@ -2,13 +2,20 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 
-  margin-top: 5rem;
-  gap: 4rem;
+  gap: 2rem;
 
-  max-width: 100%;
-  align-self: center;
+  width: 100%;
+`;
+
+export const MainInfoBox = styled.div`
+  display: flex;
+  align-items: center;
+
+  gap: 1.5rem;
 `;
 
 export const InfoBox = styled.div`
@@ -16,7 +23,6 @@ export const InfoBox = styled.div`
   flex-direction: column;
 
   gap: 1.5rem;
-  flex: 0.5;
 
   justify-content: center;
 `;
