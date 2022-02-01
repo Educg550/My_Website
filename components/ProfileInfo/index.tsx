@@ -24,19 +24,7 @@ import { Button } from "../Button";
 import { OutlineButton } from "../OutlineButton";
 import { Text } from "../Text";
 
-import bottomArrow from "../../public/lotties/bottom-arrow.json";
-import Lottie from "react-lottie";
-
 export const ProfileInfo = () => {
-  const lottieOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: bottomArrow,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
   return (
     <Container>
       <MainInfoBox>
@@ -64,7 +52,9 @@ export const ProfileInfo = () => {
 
           <ButtonsContainer>
             <Button>
-              <Text>Currículo</Text>
+              <a href="/documents/CV.pdf" target="_blank">
+                <Text>Currículo</Text>
+              </a>
             </Button>
             <OutlineButton>
               <Text>Blog</Text>
@@ -72,8 +62,6 @@ export const ProfileInfo = () => {
           </ButtonsContainer>
         </InfoBox>
       </MainInfoBox>
-
-      <Lottie options={lottieOptions} height={125} width={125} />
     </Container>
   );
 };

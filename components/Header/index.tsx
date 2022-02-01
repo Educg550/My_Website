@@ -2,6 +2,8 @@ import { useContext } from "react";
 import { Container, IconBox, HeaderTitle } from "./styles";
 
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Nav } from "../Nav";
+
 import {
   AiOutlineGithub,
   AiFillLinkedin,
@@ -14,6 +16,7 @@ import Link from "next/link";
 
 import Switch from "react-switch";
 import { ThemeContext } from "styled-components";
+import { Image } from "../Image";
 
 interface HeaderProps {
   toggleTheme(): void;
@@ -24,8 +27,10 @@ export const Header: React.FC<HeaderProps> = ({ toggleTheme }) => {
 
   return (
     <Container>
-      <GiHamburgerMenu size={36} />
-
+      <img
+        src={title === "light" ? "/images/lightLogo.png" : "/images/logo.png"}
+        height={50}
+      />
       <HeaderTitle>Home</HeaderTitle>
 
       <IconBox>

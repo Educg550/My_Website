@@ -6,9 +6,10 @@ export const Container = styled.div`
   flex: 1;
 
   padding: 2.5rem 3.5rem;
-  border-radius: 15px;
+  gap: 1rem;
+  border-radius: 15px 15px 0 0;
 
-  background: ${(props) => props.theme.colors.secondary};
+  background: ${(props) => props.theme.colors.secondaryBlue};
 `;
 
 export const TitleBox = styled.div`

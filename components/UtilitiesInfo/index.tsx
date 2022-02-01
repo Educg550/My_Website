@@ -17,12 +17,17 @@ export const UtilitiesInfo: React.FC = () => {
   };
 
   return (
-    <Container>
+    <Container id="utilities">
       <TitleBox>
         <Title style={{ fontSize: 75, fontWeight: 700 }}>
           Ferramentas que utilizo:
         </Title>
-        <Lottie options={lottieOptions} height={400} width={400} />
+        <Lottie
+          options={lottieOptions}
+          height={400}
+          width={400}
+          isClickToPauseDisabled={true}
+        />
       </TitleBox>
 
       <UtilitiesBox>

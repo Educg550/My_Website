@@ -15,6 +15,9 @@ import { ThemeProvider, DefaultTheme } from "styled-components";
 import light from "../styles/themes/light";
 import dark from "../styles/themes/dark";
 
+import bottomArrow from "../public/lotties/bottom-arrow.json";
+import Lottie from "react-lottie";
+
 const Home: NextPage = () => {
   const [theme, setTheme] = usePersistedState<DefaultTheme>("theme", light);
 
@@ -22,7 +25,16 @@ const Home: NextPage = () => {
     setTheme(theme.title === "light" ? dark : light);
   };
 
-  const textFormat = { textIndent: 25, color: "#222" };
+  const textFormat = { textIndent: 25, color: theme.colors.light };
+
+  const bottomArrowOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: bottomArrow,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
 
   return (
     <ThemeProvider theme={theme}>
@@ -37,38 +49,69 @@ const Home: NextPage = () => {
         <Header toggleTheme={toggleTheme} />
 
         <ProfileInfo />
+        <button
+          style={{
+            background: "none",
+            border: "none",
+            maxWidth: 125,
+            alignSelf: "center",
+          }}
+          onClick={() =>
+            document
+              .querySelector("#utilities")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
+        >
+          <Lottie
+            options={bottomArrowOptions}
+            height={125}
+            width={125}
+            isClickToPauseDisabled={true}
+          />
+        </button>
         <UtilitiesInfo />
 
         <ContentHolder title="✍️ Sobre mim">
           <Text style={textFormat}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            sit amet urna nec magna suscipit rhoncus. Nulla facilisi. Morbi quis
-            dui vel est vehicula rhoncus id id dui. Integer sagittis magna erat,
-            sit amet vulputate felis laoreet non. Donec vulputate molestie leo
-            et interdum. Suspendisse potenti. Vivamus volutpat luctus justo
-            vitae ullamcorper.
+            Olá! Meu nome é Eduardo Cruz Guedes, e estou atualmente cursando
+            Bacharelado em Ciência da Computação. Possuo formação completa no
+            curso técnico de Desenvolvimento de Sistemas, na ETEC Prof. Camargo
+            Aranha, colocado em 1º lugar na classificação geral do meu curso.
           </Text>
 
           <Text style={textFormat}>
-            Maecenas et lacinia sapien. Vivamus mauris enim, interdum sit amet
-            erat in, efficitur varius purus. Nulla facilisi. Aliquam sodales
-            mattis fermentum. Nulla ut ipsum non diam lobortis pharetra luctus
-            aliquet tellus. Sed a scelerisque mauris. Nunc imperdiet porta odio.
-            Sed eleifend neque vitae nunc tristique fermentum. Aliquam consequat
-            aliquam efficitur. Integer mattis mi sed ante elementum viverra. Sed
-            varius purus metus, ut molestie ligula laoreet a. Mauris fermentum
-            justo et pellentesque efficitur. Morbi risus ante, euismod ac tortor
-            a, fermentum hendrerit mauris.
+            Tive a ideia de montar essa página como forma de desafiar minhas
+            habilidades com design e desenvolvimento na prática, além de obter a
+            possibilidade de compartilhar meus projetos em andamento, conquistas
+            e curiosidades pessoais no meu blog 🤠.
           </Text>
 
           <Text style={textFormat}>
-            Nunc laoreet sodales tortor, a imperdiet risus venenatis a. Aenean
-            posuere dolor sit amet lorem efficitur ornare. Sed vitae enim
-            tincidunt, semper diam sed, elementum tellus. Morbi in neque eu est
-            lacinia tempor sit amet sit amet enim. Nullam cursus lorem lacus,
-            nec sollicitudin diam congue id. Donec a justo nec nibh aliquet
-            lobortis. Integer at ligula ac justo blandit congue et vel orci.
-            Mauris efficitur lacus eu urna lobortis, a semper quam fringilla.
+            Tive e tenho contato com tecnologias de Front-end, focadas em
+            Desenvolvimento Web, aplicativos para Desktop e Mobile, sistemas,
+            além de integração e segurança da informação e testes de qualidade
+            de software. Minhas principais linguagens de programação e
+            tecnologias/frameworks até o momento são: TypeScript, JavaScript,
+            ReactJS, React Native, Java, PHP e SQL (Pacote MySQL Workbench).
+            Também possuo experiência com linguagens de marcação e estilização,
+            como: HTML5, Markdown e CSS3. Obtive paixão pela tecnologia e pelo
+            desenvolvimento no ensino médio conduzido juntamente ao técnico.
+            Desde então, venho aprimorando minhas habilidades de forma autônoma,
+            sendo que grande parte dos meus conhecimentos foram adquiridos
+            através de cursos e realização de projetos extracurriculares, que
+            podem ser visualizados no meu perfil do GitHub:
+            https://github.com/Educg550.
+          </Text>
+
+          <Text style={textFormat}>
+            Tenho familiaridade com os sistemas operacionais Windows e Linux,
+            além de conhecimento avançado no pacote Office da Microsoft, Google
+            Docs e conhecimento intermediário no pacote LibreOffice. Possuo
+            conhecimento fluente da língua espanhola, posso escrever, falar e
+            traduzir, pois nasci na Colômbia. Sou brasileiro nato nascido no
+            exterior, e fui criado no Brasil desde os meus 7 anos, portanto, sou
+            completamente fluente em português. Sou também capaz de compreender
+            inglês em nível avançado.
           </Text>
         </ContentHolder>
       </Container>
