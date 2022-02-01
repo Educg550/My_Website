@@ -1,6 +1,14 @@
 # 👨‍💻 My Website
 
-My personal website made with ReactJS, Next.js and TypeScript
+<p align="center">
+  <img src="public/images/lightLogo.png" />
+</p>
+
+<p align="center">
+  <img src="public/images/mockup-screen.png" /> 
+</p>
+ 
+<h3 align="center">🐶 DogeDev 🪙 - My personal website made with ReactJS, Next.js and TypeScript</h3>
 
 # 💻 Used Technologies
 
