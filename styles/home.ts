@@ -20,7 +20,11 @@ export const Container = styled.div`
 
   padding: 2.25rem 2.25rem 0 2.25rem;
 
-  @media (max-width: 975px) {
+  @media (max-width: 650px) {
     width: 100%;
+    margin: 0;
+
+    gap: 2.5rem;
+    padding: 2rem 0;
   }
 `;

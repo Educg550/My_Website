@@ -10,6 +10,13 @@ export const Container = styled.div`
   border-radius: 15px 15px 0 0;
 
   background: ${(props) => props.theme.colors.secondaryBlue};
+
+  @media (max-width: 650px) {
+    width: 100%;
+    border-radius: 0;
+
+    padding: 2.5rem 2rem;
+  }
 `;
 
 export const TitleBox = styled.div`

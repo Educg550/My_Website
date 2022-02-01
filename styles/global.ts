@@ -12,5 +12,9 @@ export default createGlobalStyle`
         font-size: 16px;
         color: ${(props) => props.theme.colors.text};
         font-family: 'Sora', sans-serif;
+
+        @media (max-width: 650px) {
+            font-size: 12px;
+        }
     }
 `;

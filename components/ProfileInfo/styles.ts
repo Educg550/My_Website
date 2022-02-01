@@ -9,6 +9,12 @@ export const Container = styled.div`
   gap: 2rem;
 
   width: 100%;
+
+  @media (max-width: 650px) {
+    .mobile-delete {
+      display: none;
+    }
+  }
 `;
 
 export const MainInfoBox = styled.div`
@@ -25,6 +31,11 @@ export const InfoBox = styled.div`
   gap: 1.5rem;
 
   justify-content: center;
+
+  @media (max-width: 650px) {
+    align-items: center;
+    max-width: 650px;
+  }
 `;
 
 export const ProgrammingIcons = styled.div`

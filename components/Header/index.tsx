@@ -30,10 +30,11 @@ export const Header: React.FC<HeaderProps> = ({ toggleTheme }) => {
       <img
         src={title === "light" ? "/images/lightLogo.png" : "/images/logo.png"}
         height={50}
+        className="mobile-delete"
       />
       <HeaderTitle>Home</HeaderTitle>
 
-      <IconBox>
+      <IconBox className="mobile-delete">
         <Link href="https://www.linkedin.com/in/eduardo-cruz-guedes-276a01206/">
           <a target="_blank">
             <AiFillLinkedin size={36} color={colors.text} />
