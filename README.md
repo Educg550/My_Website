@@ -1,14 +1,16 @@
 # 👨‍💻 My Website
 
 <p align="center">
-  <img src="public/images/lightLogo.png" />
+  <img src="public/images/mockup-screen.png" height="650" /> 
 </p>
 
 <p align="center">
-  <img src="public/images/mockup-screen.png" /> 
+  <img src="public/images/lightLogo.png" />
 </p>
  
 <h3 align="center">🐶 DogeDev 🪙 - My personal website made with ReactJS, Next.js and TypeScript</h3>
+
+<h4 align="center">You can see the actual page deployed <a href="https://doge-dev.vercel.app/" target="_blank">here</a></h4>
 
 # 💻 Used Technologies
 
