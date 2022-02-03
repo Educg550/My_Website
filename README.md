@@ -1,7 +1,7 @@
 # 👨‍💻 My Website
 
 <p align="center">
-  <img src="public/images/mockup-screen.png" height="650" /> 
+  <img src="public/images/mockup-screen.png" height="700" /> 
 </p>
 
 <p align="center">

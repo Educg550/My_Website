@@ -23,6 +23,7 @@ import {
 import { Button } from "../Button";
 import { OutlineButton } from "../OutlineButton";
 import { Text } from "../Text";
+import Link from "next/link";
 
 export const ProfileInfo = () => {
   return (
@@ -54,14 +55,20 @@ export const ProfileInfo = () => {
           </IconsContainer>
 
           <ButtonsContainer>
-            <Button>
-              <a href="/documents/CV.pdf" target="_blank">
-                <Text>Currículo</Text>
+            <Link href="/documents/CV.pdf">
+              <a>
+                <Button>
+                  <Text>Currículo</Text>
+                </Button>
               </a>
-            </Button>
-            <OutlineButton>
-              <Text>Blog</Text>
-            </OutlineButton>
+            </Link>
+            <Link href="/blog">
+              <a>
+                <OutlineButton>
+                  <Text>Blog</Text>
+                </OutlineButton>
+              </a>
+            </Link>
           </ButtonsContainer>
         </InfoBox>
       </MainInfoBox>

@@ -6,11 +6,13 @@ export default {
     secondary: "#f5c253",
 
     background: "#212121",
+    secondaryBackground: "#313131",
+
     text: "#f1f1f1",
 
     gray: "#9b9b9b",
     red: "#FF7A7A",
-    secondaryBlue: "#4096de",
+    lightBlue: "#4096de",
 
     light: "#f1f1f1",
     dark: "#313131",

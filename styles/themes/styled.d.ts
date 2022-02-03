@@ -10,11 +10,13 @@ declare module "styled-components" {
       secondary: string;
 
       background: string;
+      secondaryBackground: string;
+
       text: string;
 
       gray: string;
       red: string;
-      secondaryBlue: string;
+      lightBlue: string;
 
       dark: string;
       light: string;

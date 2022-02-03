@@ -9,7 +9,7 @@ export const Container = styled.div`
   gap: 1rem;
   border-radius: 15px 15px 0 0;
 
-  background: ${(props) => props.theme.colors.secondaryBlue};
+  background: ${(props) => props.theme.colors.secondaryBackground};
 
   @media (max-width: 650px) {
     width: 100%;

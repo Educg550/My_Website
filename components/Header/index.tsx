@@ -1,9 +1,6 @@
 import { useContext } from "react";
 import { Container, IconBox, HeaderTitle } from "./styles";
 
-import { GiHamburgerMenu } from "react-icons/gi";
-import { Nav } from "../Nav";
-
 import {
   AiOutlineGithub,
   AiFillLinkedin,
@@ -16,14 +13,15 @@ import Link from "next/link";
 
 import Switch from "react-switch";
 import { ThemeContext } from "styled-components";
-import { Image } from "../Image";
+import { StackContext } from "../../pages/_app";
 
 interface HeaderProps {
-  toggleTheme(): void;
+  headerTitle: string;
 }
 
-export const Header: React.FC<HeaderProps> = ({ toggleTheme }) => {
+export const Header: React.FC<HeaderProps> = ({ headerTitle }) => {
   const { colors, title } = useContext(ThemeContext);
+  const { toggleTheme } = useContext(StackContext);
 
   return (
     <Container>
@@ -32,7 +30,7 @@ export const Header: React.FC<HeaderProps> = ({ toggleTheme }) => {
         height={50}
         className="mobile-delete"
       />
-      <HeaderTitle>Home</HeaderTitle>
+      <HeaderTitle>{headerTitle}</HeaderTitle>
 
       <IconBox className="mobile-delete">
         <Link href="https://www.linkedin.com/in/eduardo-cruz-guedes-276a01206/">

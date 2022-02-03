@@ -17,4 +17,9 @@ export default createGlobalStyle`
             font-size: 12px;
         }
     }
+
+    a {
+        text-decoration: none;
+        color: ${(props) => props.theme.colors.text};
+    }
 `;
