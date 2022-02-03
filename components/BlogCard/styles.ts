@@ -14,6 +14,7 @@ export const Container = styled.div`
 
 export const Thumbnail = styled.img`
   height: 15.5rem;
+  border-radius: 3rem 0 0 3rem;
 `;
 
 export const TextBox = styled.div`

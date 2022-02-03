@@ -1,21 +1,17 @@
 import "../styles/fonts.scss";
 import type { AppProps } from "next/app";
-import { DefaultTheme, ThemeProvider } from "styled-components";
 import usePersistedState from "../utils/usePersistedState";
-
+import { DefaultTheme, ThemeProvider } from "styled-components";
 import light from "../styles/themes/light";
 import dark from "../styles/themes/dark";
+
 import { createContext } from "react";
 
-import GlobalStyle from "../styles/global";
-
-interface StackContextProps {
+interface gg {
   toggleTheme(): void;
 }
 
-export const StackContext = createContext<StackContextProps>(
-  {} as StackContextProps
-);
+export const StackContext = createContext({} as gg);
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [theme, setTheme] = usePersistedState<DefaultTheme>("theme", light);
@@ -27,7 +23,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <StackContext.Provider value={{ toggleTheme }}>
-        <GlobalStyle />
         <Component {...pageProps} />
       </StackContext.Provider>
     </ThemeProvider>

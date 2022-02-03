@@ -56,18 +56,16 @@ export const ProfileInfo = () => {
 
           <ButtonsContainer>
             <Link href="/documents/CV.pdf">
-              <a>
-                <Button>
+              <Button>
+                <a target="_blank">
                   <Text>Currículo</Text>
-                </Button>
-              </a>
+                </a>
+              </Button>
             </Link>
             <Link href="/blog">
-              <a>
-                <OutlineButton>
-                  <Text>Blog</Text>
-                </OutlineButton>
-              </a>
+              <OutlineButton>
+                <Text>Blog</Text>
+              </OutlineButton>
             </Link>
           </ButtonsContainer>
         </InfoBox>

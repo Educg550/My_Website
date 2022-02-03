@@ -25,11 +25,18 @@ export const Header: React.FC<HeaderProps> = ({ headerTitle }) => {
 
   return (
     <Container>
-      <img
-        src={title === "light" ? "/images/lightLogo.png" : "/images/logo.png"}
-        height={50}
-        className="mobile-delete"
-      />
+      <Link href="/">
+        <a>
+          <img
+            src={
+              title === "light" ? "/images/lightLogo.png" : "/images/logo.png"
+            }
+            height={50}
+            className="mobile-delete"
+          />
+        </a>
+      </Link>
+
       <HeaderTitle>{headerTitle}</HeaderTitle>
 
       <IconBox className="mobile-delete">
