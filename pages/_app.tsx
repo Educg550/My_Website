@@ -7,11 +7,13 @@ import dark from "../styles/themes/dark";
 
 import { createContext } from "react";
 
-interface gg {
+import GlobalStyle from "../styles/global";
+
+interface StackProps {
   toggleTheme(): void;
 }
 
-export const StackContext = createContext({} as gg);
+export const StackContext = createContext({} as StackProps);
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [theme, setTheme] = usePersistedState<DefaultTheme>("theme", light);
@@ -23,6 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <StackContext.Provider value={{ toggleTheme }}>
+        <GlobalStyle />
         <Component {...pageProps} />
       </StackContext.Provider>
     </ThemeProvider>

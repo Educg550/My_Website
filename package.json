@@ -3,14 +3,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@types/react-burger-menu": "^2.8.3",
     "@types/react-lottie": "^1.2.6",
-    "@types/styled-components": "^5.1.20",
+    "@types/styled-components": "^5.1.22",
     "next": "12.0.7",
     "react": "17.0.2",
     "react-burger-menu": "^3.0.6",
