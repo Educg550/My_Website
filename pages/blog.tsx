@@ -9,7 +9,7 @@ import Footer from "../src/components/Footer";
 import { PostProps } from "./posts/[slug]";
 
 interface BlogProps {
-  posts: any;
+  posts: PostProps[];
 }
 
 export const getStaticProps = async () => {
@@ -17,8 +17,6 @@ export const getStaticProps = async () => {
     "https://my-json-server.typicode.com/Educg550/My_Website/posts"
   );
   const data = await res.json();
-
-  console.log(data);
 
   return {
     props: { posts: data },
@@ -33,7 +31,7 @@ const Blog: NextPage<BlogProps> = ({ posts }) => {
       <Header headerTitle="Blog" />
 
       <div>
-        {Object.keys(posts).map((data: any) => {
+        {posts.map((data) => {
           // a "key" é o próprio slug
           return (
             <BlogCard
