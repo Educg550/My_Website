@@ -4,7 +4,7 @@ import { BackgroundWrapper } from "../../src/components/BackgroundWrapper";
 import { Header } from "../../src/components/Header";
 import Head from "../../src/infra/components/Head";
 
-interface PostProps {
+export interface PostProps {
   slug: string;
   title: string;
   subtitle: string;

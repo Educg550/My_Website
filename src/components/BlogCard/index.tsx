@@ -25,17 +25,19 @@ export const BlogCard: React.FC<BlogCardProps> = ({
   const { pid } = router.query;
 
   return (
-    <Link key={slug} href={`/posts/${slug}`}>
-      <a>
-        <Container>
-          <Thumbnail src={thumbnail} />
+    <div key={slug}>
+      <Link href={`/posts/${slug}`}>
+        <a>
+          <Container>
+            <Thumbnail src={thumbnail} />
 
-          <TextBox>
-            <Title>{title}</Title>
-            <Text>{subtitle}</Text>
-          </TextBox>
-        </Container>
-      </a>
-    </Link>
+            <TextBox>
+              <Title>{title}</Title>
+              <Text>{subtitle}</Text>
+            </TextBox>
+          </Container>
+        </a>
+      </Link>
+    </div>
   );
 };
