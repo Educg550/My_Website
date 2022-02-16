@@ -28,7 +28,7 @@ const Home: NextPage = () => {
 
   return (
     <BackgroundWrapper>
-      <Head title="Home" />
+      <Head headTitle="Home" />
 
       <Header headerTitle="Home" />
 

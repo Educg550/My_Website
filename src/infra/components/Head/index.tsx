@@ -1,18 +1,27 @@
 import NextHead from "next/head";
+import { useContext } from "react";
+import { ThemeContext } from "styled-components";
 
 interface HeadProps {
-  title: string;
+  headTitle: string;
 }
 
-const Head: React.FC<HeadProps> = ({ title }) => {
+const Head: React.FC<HeadProps> = ({ headTitle }) => {
+  const { title } = useContext(ThemeContext);
+
   return (
     <NextHead>
-      <title>{title} | DogeDev</title>
+      <title>{headTitle} | DogeDev</title>
       <meta
         name="description"
         content="@Educg550 | Página pessoal feita com ReactJS e Next.js"
       />
-      <link rel="icon" href="/icons/favicon.ico" />
+      <link
+        rel="icon"
+        href={
+          title === "light" ? "/icons/favicon.ico" : "/icons/favicon-dark.ico"
+        }
+      />
     </NextHead>
   );
 };

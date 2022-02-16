@@ -9,7 +9,7 @@ import Footer from "../src/components/Footer";
 const Blog: NextPage = () => {
   return (
     <BackgroundWrapper>
-      <Head title="Blog" />
+      <Head headTitle="Blog" />
 
       <Header headerTitle="Blog" />
 
