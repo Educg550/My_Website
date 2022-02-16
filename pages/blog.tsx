@@ -13,7 +13,19 @@ const Blog: NextPage = () => {
 
       <Header headerTitle="Blog" />
 
-      <BlogCard />
+      {/* <div>
+        {posts.map((data) => {
+          // a "key" é o próprio slug
+          return (
+            <BlogCard
+              slug={data.slug}
+              title={data.title}
+              subtitle={data.subtitle}
+              thumbnail={data.thumbnail}
+            />
+          );
+        })}
+      </div> */}
 
       <Footer />
     </BackgroundWrapper>

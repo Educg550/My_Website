@@ -7,7 +7,10 @@ export const Container = styled.div`
   width: 100%;
   border-radius: 3rem;
   padding-right: 2rem;
+
   gap: 1rem;
+
+  margin-bottom: 1.5rem;
 
   background: ${(props) => props.theme.colors.secondaryBackground};
 `;

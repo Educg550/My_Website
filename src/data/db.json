@@ -1,0 +1,31 @@
+{
+  "posts": [
+    {
+      "slug": "risum",
+      "title": "Risum - Projeto de TCC 2021",
+      "subtitle": "Uma rede social desenvolvida para dispositivos móveis, com ênfase na criação e compartilhamento de memes. O projeto já está disponível e à público. Foram utilizadas principalmente as tecnologias React Native, TypeScript e Google Firebase.",
+      "paragraphs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere, ex id consectetur finibus, ipsum nisi cursus ex, eu elementum justo nisl in odio. Mauris eu faucibus urna. Cras tempor arcu sit amet dapibus hendrerit. Sed fringilla euismod metus, vel volutpat mi varius nec. Mauris nulla turpis, hendrerit in tortor eu, pretium consequat libero. Vivamus finibus justo quam, non tristique metus ultricies eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent porta sit amet ex a accumsan. Quisque sit amet volutpat nibh. Sed nec erat nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut finibus felis arcu, ac lobortis elit pharetra eu.",
+        "Praesent interdum dapibus orci, sit amet feugiat purus fringilla ut. Donec et accumsan nibh. Nulla imperdiet, nunc at consequat consectetur, ipsum lacus molestie mi, ac ornare tortor neque vel libero. Praesent euismod vehicula arcu vitae pellentesque. Vestibulum dignissim nisi vitae mi tempor condimentum. Vivamus malesuada iaculis neque. Nunc finibus sed nisl sit amet dictum. Nullam a dui sed augue faucibus vulputate. Donec ullamcorper et nunc nec dignissim. Phasellus aliquam imperdiet dui, vel varius velit rhoncus eget. Sed et faucibus erat. Ut ac ex accumsan, hendrerit enim eu, tincidunt eros. Proin nec maximus mauris.",
+        "Curabitur placerat mollis felis et efficitur. Cras ullamcorper justo felis, vel faucibus nulla dapibus id. Integer sodales orci mauris, at feugiat magna mollis at. Donec eu enim nec turpis efficitur consequat. Vivamus congue semper mi, vel pellentesque urna gravida ac. Morbi sed tortor congue, gravida nunc pharetra, maximus augue. Suspendisse potenti. Nulla eu arcu vitae mi fringilla ornare.",
+        "Proin id egestas libero, vel blandit augue. Aenean at diam nec urna maximus pellentesque eu eget nisi. Integer nec nisl tempor, convallis eros vel, rhoncus ante. Etiam libero leo, ullamcorper eget odio non, lobortis vehicula odio. Integer purus neque, facilisis sed porta sit amet, aliquam sit amet tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis erat mauris, at molestie sapien lacinia sit amet. Maecenas pulvinar odio sed massa faucibus, ut hendrerit neque varius. Praesent quis urna mollis, imperdiet arcu id, convallis odio. Fusce ac arcu nec nunc sollicitudin tempor ac vestibulum nisi. Integer consectetur erat sit amet rhoncus posuere. Integer facilisis mattis mauris, quis commodo dui ornare ut. Maecenas ac lectus quam. Ut maximus euismod ex non rhoncus. Duis viverra aliquet nisl, eu sodales lectus placerat scelerisque. Phasellus feugiat condimentum massa, quis vehicula odio volutpat a."
+      ],
+      "thumbnail": "/images/posts/1-thumbnail.png",
+      "cover": "/images/posts/1-thumbnail.png"
+    },
+
+    {
+      "slug": "bouncytrader",
+      "title": "BouncyTrader - Plataforma para Investidores",
+      "subtitle": "Aplicativo simples que estima perdas e ganhos (PnL) com base nas operações diárias do usuário investidor",
+      "paragraphs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere, ex id consectetur finibus, ipsum nisi cursus ex, eu elementum justo nisl in odio. Mauris eu faucibus urna. Cras tempor arcu sit amet dapibus hendrerit. Sed fringilla euismod metus, vel volutpat mi varius nec. Mauris nulla turpis, hendrerit in tortor eu, pretium consequat libero. Vivamus finibus justo quam, non tristique metus ultricies eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent porta sit amet ex a accumsan. Quisque sit amet volutpat nibh. Sed nec erat nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut finibus felis arcu, ac lobortis elit pharetra eu.",
+        "Praesent interdum dapibus orci, sit amet feugiat purus fringilla ut. Donec et accumsan nibh. Nulla imperdiet, nunc at consequat consectetur, ipsum lacus molestie mi, ac ornare tortor neque vel libero. Praesent euismod vehicula arcu vitae pellentesque. Vestibulum dignissim nisi vitae mi tempor condimentum. Vivamus malesuada iaculis neque. Nunc finibus sed nisl sit amet dictum. Nullam a dui sed augue faucibus vulputate. Donec ullamcorper et nunc nec dignissim. Phasellus aliquam imperdiet dui, vel varius velit rhoncus eget. Sed et faucibus erat. Ut ac ex accumsan, hendrerit enim eu, tincidunt eros. Proin nec maximus mauris.",
+        "Curabitur placerat mollis felis et efficitur. Cras ullamcorper justo felis, vel faucibus nulla dapibus id. Integer sodales orci mauris, at feugiat magna mollis at. Donec eu enim nec turpis efficitur consequat. Vivamus congue semper mi, vel pellentesque urna gravida ac. Morbi sed tortor congue, gravida nunc pharetra, maximus augue. Suspendisse potenti. Nulla eu arcu vitae mi fringilla ornare.",
+        "Proin id egestas libero, vel blandit augue. Aenean at diam nec urna maximus pellentesque eu eget nisi. Integer nec nisl tempor, convallis eros vel, rhoncus ante. Etiam libero leo, ullamcorper eget odio non, lobortis vehicula odio. Integer purus neque, facilisis sed porta sit amet, aliquam sit amet tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis erat mauris, at molestie sapien lacinia sit amet. Maecenas pulvinar odio sed massa faucibus, ut hendrerit neque varius. Praesent quis urna mollis, imperdiet arcu id, convallis odio. Fusce ac arcu nec nunc sollicitudin tempor ac vestibulum nisi. Integer consectetur erat sit amet rhoncus posuere. Integer facilisis mattis mauris, quis commodo dui ornare ut. Maecenas ac lectus quam. Ut maximus euismod ex non rhoncus. Duis viverra aliquet nisl, eu sodales lectus placerat scelerisque. Phasellus feugiat condimentum massa, quis vehicula odio volutpat a."
+      ],
+      "thumbnail": "/images/posts/2-thumbnail.png",
+      "cover": "/images/posts/2-thumbnail.png"
+    }
+  ]
+}
