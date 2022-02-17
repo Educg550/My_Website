@@ -8,7 +8,7 @@ export default {
     background: "#f1f1f1",
     secondaryBackground: "#d9d9d9",
 
-    text: "#222",
+    text: "#222222",
 
     gray: "#9b9b9b",
     red: "#FF7A7A",
