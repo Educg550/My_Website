@@ -29,10 +29,7 @@ export const ProfileInfo = () => {
   return (
     <Container>
       <MainInfoBox>
-        <ProfilePicture
-          src="https://avatars.githubusercontent.com/u/47800334"
-          className="mobile-delete"
-        />
+        <ProfilePicture src="https://avatars.githubusercontent.com/u/47800334" />
         <InfoBox>
           <Title>Olá, eu sou o Eduardo! 👋</Title>
           <GraySubtitle>

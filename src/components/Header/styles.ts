@@ -10,10 +10,6 @@ export const Container = styled.div`
   align-items: center;
 
   @media (max-width: 650px) {
-    .mobile-delete {
-      display: none;
-    }
-
     justify-content: center;
   }
 `;
@@ -21,6 +17,10 @@ export const Container = styled.div`
 export const IconBox = styled.div`
   display: flex;
   justify-content: center;
+
+  @media (max-width: 650px) {
+    display: none;
+  }
 `;
 
 export const HeaderTitle = styled.h2`
@@ -31,4 +31,10 @@ export const HeaderTitle = styled.h2`
   line-height: 0;
 
   color: ${(props) => props.theme.colors.gray};
+`;
+
+export const Logo = styled.img`
+  @media (max-width: 650px) {
+    display: none;
+  }
 `;

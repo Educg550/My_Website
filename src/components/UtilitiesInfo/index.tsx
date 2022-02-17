@@ -1,4 +1,4 @@
-import { Container, TitleBox, UtilitiesBox } from "./styles";
+import { Container, TitleBox, UtilitiesBox, LottieContainer } from "./styles";
 import { Title } from "./styles";
 import { Image } from "../Image/index";
 
@@ -20,14 +20,14 @@ export const UtilitiesInfo: React.FC = () => {
     <Container id="utilities">
       <TitleBox>
         <Title>Ferramentas que utilizo:</Title>
-        <div className="mobile-delete">
+        <LottieContainer>
           <Lottie
             options={lottieOptions}
             height={400}
             width={400}
             isClickToPauseDisabled={true}
           />
-        </div>
+        </LottieContainer>
       </TitleBox>
 
       <UtilitiesBox>

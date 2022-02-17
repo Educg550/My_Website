@@ -9,10 +9,6 @@ export const Container = styled.div`
   width: 100%;
 
   @media (max-width: 650px) {
-    .mobile-delete {
-      display: none;
-    }
-
     flex-direction: column;
   }
 `;
@@ -46,4 +42,10 @@ export const UtilitiesBox = styled.div`
   justify-content: center;
 
   gap: 1.5rem;
+`;
+
+export const LottieContainer = styled.div`
+  @media (max-width: 650px) {
+    display: none;
+  }
 `;

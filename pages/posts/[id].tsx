@@ -1,6 +1,8 @@
 import { NextPage } from "next";
+import { GetStaticPaths, GetStaticProps } from "next";
 
 import { BackgroundWrapper } from "../../src/components/BackgroundWrapper";
+import { ContentHolder } from "../../src/components/ContentHolder";
 import { Header } from "../../src/components/Header";
 import { Text } from "../../src/components/Text";
 import { Title } from "../../src/components/Title";
@@ -17,9 +19,13 @@ export interface PostProps {
   cover: string; // Cover src
 }
 
-export const getStaticPaths = async () => {
+interface PostPageProps {
+  post: PostProps;
+}
+
+export const getStaticPaths: GetStaticPaths = async () => {
   const res = await fetch(
-    "https://my-json-server.typicode.com/Educg550/My_Website/posts"
+    `https://my-json-server.typicode.com/Educg550/My_Website/posts/`
   );
   const data = await res.json();
 
@@ -35,8 +41,8 @@ export const getStaticPaths = async () => {
   };
 };
 
-export const getStaticProps = async (context: any) => {
-  const id = context.params.id;
+export const getStaticProps: GetStaticProps = async (context) => {
+  const id = context.params?.id;
   const res = await fetch(
     `https://my-json-server.typicode.com/Educg550/My_Website/posts/${id}`
   );
@@ -47,29 +53,30 @@ export const getStaticProps = async (context: any) => {
   };
 };
 
-const Post: NextPage<PostProps> = ({
-  id,
-  slug,
-  title,
-  subtitle,
-  thumbnail,
-  paragraphs,
-  cover,
-}) => {
+const Post: NextPage<PostPageProps> = ({ post }) => {
   return (
     <BackgroundWrapper>
-      <Head headTitle={`${slug} | DogeDev`} />
+      <Head headTitle={`${post.slug} | DogeDev`} />
 
-      <Header headerTitle={slug} />
-      <Title>{title}</Title>
+      <Header headerTitle={post.title} />
+      <ContentHolder title={post.title}>
+        {post.paragraphs.map((data, key) => {
+          return (
+            <div key={key}>
+              <Text>{data}</Text>
+            </div>
+          );
+        })}
+      </ContentHolder>
+      {/* <Title>{post.title}</Title>
 
-      {paragraphs.map((data, key) => {
+      {post.paragraphs.map((data, key) => {
         return (
           <div key={key}>
             <Text>{data}</Text>
           </div>
         );
-      })}
+      })} */}
     </BackgroundWrapper>
   );
 };

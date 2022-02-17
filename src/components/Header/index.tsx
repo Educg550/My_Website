@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Container, IconBox, HeaderTitle } from "./styles";
+import { Container, IconBox, HeaderTitle, Logo } from "./styles";
 
 import {
   AiOutlineGithub,
@@ -27,19 +27,18 @@ export const Header: React.FC<HeaderProps> = ({ headerTitle }) => {
     <Container>
       <Link href="/">
         <a>
-          <img
+          <Logo
             src={
               title === "light" ? "/images/lightLogo.png" : "/images/logo.png"
             }
             height={50}
-            className="mobile-delete"
           />
         </a>
       </Link>
 
       <HeaderTitle>{headerTitle}</HeaderTitle>
 
-      <IconBox className="mobile-delete">
+      <IconBox>
         <Link href="https://www.linkedin.com/in/educg550/">
           <a target="_blank">
             <AiFillLinkedin size={36} color={colors.text} />

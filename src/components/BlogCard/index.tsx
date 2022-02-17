@@ -8,6 +8,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 interface BlogCardProps {
+  id: string;
   slug: string;
   title: string;
   subtitle: string;
@@ -16,6 +17,7 @@ interface BlogCardProps {
 }
 
 export const BlogCard: React.FC<BlogCardProps> = ({
+  id,
   slug,
   title,
   subtitle,
@@ -25,19 +27,17 @@ export const BlogCard: React.FC<BlogCardProps> = ({
   const { pid } = router.query;
 
   return (
-    <div key={slug}>
-      <Link href={`/posts/${slug}`}>
-        <a>
-          <Container>
-            <Thumbnail src={thumbnail} />
+    <Link href={`/posts/${id}`}>
+      <a>
+        <Container>
+          <Thumbnail src={thumbnail} />
 
-            <TextBox>
-              <Title>{title}</Title>
-              <Text>{subtitle}</Text>
-            </TextBox>
-          </Container>
-        </a>
-      </Link>
-    </div>
+          <TextBox>
+            <Title>{title}</Title>
+            <Text>{subtitle}</Text>
+          </TextBox>
+        </Container>
+      </a>
+    </Link>
   );
 };

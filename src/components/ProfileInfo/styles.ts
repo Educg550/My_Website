@@ -9,11 +9,6 @@ export const Container = styled.div`
   gap: 2rem;
 
   width: 100%;
-
-  @media (max-width: 650px) {
-    .mobile-delete {
-      display: none;
-    }
   }
 `;
 
@@ -65,4 +60,8 @@ export const ProfilePicture = styled.img`
   border: 3.5px solid
     ${(props) =>
       props.theme.title === "dark" ? props.theme.colors.primary : "black"};
+
+  @media (max-width: 650px) {
+    display: none;
+  }
 `;
