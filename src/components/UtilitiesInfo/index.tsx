@@ -33,7 +33,7 @@ export const UtilitiesInfo: React.FC = () => {
       <UtilitiesBox>
         <Image src="images/figma.png" subtitle="Figma" />
         <Image src="images/vsCode.png" subtitle="Visual Studio Code" />
-        <Image src="images/manjaro.png" subtitle="Manjaro (KDE Plasma)" />
+        <Image src="images/manjaro.png" subtitle="KDE Neon" />
         <Image src="images/github.png" subtitle="GitHub" />
         <Image src="images/canva.webp" subtitle="Canva" />
       </UtilitiesBox>

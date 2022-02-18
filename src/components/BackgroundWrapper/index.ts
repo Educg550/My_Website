@@ -19,13 +19,13 @@ export const BackgroundWrapper = styled.div`
       background-size: cover;
   `}
 
-  padding: 2.25rem;
+  padding: 2.25rem 0;
+
+  @media (max-width: 950px) {
+    gap: 2.5rem;
+  }
 
   @media (max-width: 650px) {
-    width: 100%;
-    margin: 0;
-
     gap: 2.5rem;
-    padding: 2rem 0;
   }
 `;

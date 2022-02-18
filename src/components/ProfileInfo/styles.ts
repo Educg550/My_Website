@@ -9,7 +9,6 @@ export const Container = styled.div`
   gap: 2rem;
 
   width: 100%;
-  }
 `;
 
 export const MainInfoBox = styled.div`
@@ -17,6 +16,10 @@ export const MainInfoBox = styled.div`
   align-items: center;
 
   gap: 1.5rem;
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
 `;
 
 export const InfoBox = styled.div`
@@ -54,7 +57,6 @@ export const ButtonsContainer = styled.div`
 
 export const ProfilePicture = styled.img`
   width: 25rem;
-  height: 25rem;
   border-radius: 12.5rem;
 
   border: 3.5px solid
@@ -62,6 +64,6 @@ export const ProfilePicture = styled.img`
       props.theme.title === "dark" ? props.theme.colors.primary : "black"};
 
   @media (max-width: 650px) {
-    display: none;
+    width: 17.5rem;
   }
 `;

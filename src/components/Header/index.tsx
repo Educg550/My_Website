@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Container, IconBox, HeaderTitle, Logo } from "./styles";
+import { Container, IconBox, HeaderTitle, Logo, RemainBox } from "./styles";
 
 import {
   AiOutlineGithub,
@@ -8,6 +8,8 @@ import {
 } from "react-icons/ai";
 
 import { BsMoonStars, BsSun } from "react-icons/bs";
+
+import { IoIosArrowBack } from "react-icons/io";
 
 import Link from "next/link";
 
@@ -33,6 +35,9 @@ export const Header: React.FC<HeaderProps> = ({ headerTitle }) => {
             }
             height={50}
           />
+          <RemainBox>
+            <IoIosArrowBack size={30} />
+          </RemainBox>
         </a>
       </Link>
 
@@ -54,6 +59,7 @@ export const Header: React.FC<HeaderProps> = ({ headerTitle }) => {
             <AiOutlineGithub size={36} color={colors.text} />
           </a>
         </Link>
+
         <Switch
           onChange={toggleTheme}
           checked={title === "dark"}

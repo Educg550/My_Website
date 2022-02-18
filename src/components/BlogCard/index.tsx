@@ -5,13 +5,13 @@ import { Title } from "../Title";
 import { Text } from "../Text";
 
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { GraySubtitle } from "../GraySubtitle";
 
 interface BlogCardProps {
   id: string;
   slug: string;
   title: string;
-  subtitle: string;
+  cardText: string;
 
   thumbnail: string; // Thumb src
 }
@@ -20,12 +20,9 @@ export const BlogCard: React.FC<BlogCardProps> = ({
   id,
   slug,
   title,
-  subtitle,
+  cardText,
   thumbnail,
 }) => {
-  const router = useRouter();
-  const { pid } = router.query;
-
   return (
     <Link href={`/posts/${id}`}>
       <a>
@@ -33,8 +30,14 @@ export const BlogCard: React.FC<BlogCardProps> = ({
           <Thumbnail src={thumbnail} />
 
           <TextBox>
-            <Title>{title}</Title>
-            <Text>{subtitle}</Text>
+            <div>
+              <Title>{title.substring(title.indexOf("-") - 1, 0)}</Title>
+              <GraySubtitle>
+                {title.substring(title.indexOf("-") + 2, title.length)}
+              </GraySubtitle>
+            </div>
+
+            <Text>{cardText}</Text>
           </TextBox>
         </Container>
       </a>

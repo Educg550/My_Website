@@ -3,6 +3,8 @@ import { GetStaticPaths, GetStaticProps } from "next";
 
 import { BackgroundWrapper } from "../../src/components/BackgroundWrapper";
 import { ContentHolder } from "../../src/components/ContentHolder";
+import { CoverImage } from "../../src/components/CoverImage";
+import Footer from "../../src/components/Footer";
 import { Header } from "../../src/components/Header";
 import { Text } from "../../src/components/Text";
 import { Title } from "../../src/components/Title";
@@ -12,7 +14,7 @@ export interface PostProps {
   id: number;
   slug: string;
   title: string;
-  subtitle: string;
+  cardText: string;
   paragraphs: string[];
 
   thumbnail: string; // Thumb src
@@ -54,29 +56,29 @@ export const getStaticProps: GetStaticProps = async (context) => {
 };
 
 const Post: NextPage<PostPageProps> = ({ post }) => {
+  const formattedTitle = post.title.substring(post.title.indexOf("-") - 1, 0);
+  const textFormat = { textIndent: 25 };
+
   return (
     <BackgroundWrapper>
-      <Head headTitle={`${post.slug} | DogeDev`} />
+      <Head headTitle={`${formattedTitle} | DogeDev`} />
 
-      <Header headerTitle={post.title} />
-      <ContentHolder title={post.title}>
-        {post.paragraphs.map((data, key) => {
-          return (
-            <div key={key}>
-              <Text>{data}</Text>
-            </div>
-          );
-        })}
-      </ContentHolder>
-      {/* <Title>{post.title}</Title>
+      <Header headerTitle={formattedTitle} />
 
-      {post.paragraphs.map((data, key) => {
-        return (
-          <div key={key}>
-            <Text>{data}</Text>
-          </div>
-        );
-      })} */}
+      <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
+        <CoverImage src={post.cover} />
+        <ContentHolder title={post.title}>
+          {post.paragraphs.map((data, key) => {
+            return (
+              <div key={key}>
+                <Text style={textFormat}>{data}</Text>
+              </div>
+            );
+          })}
+        </ContentHolder>
+      </div>
+
+      <Footer />
     </BackgroundWrapper>
   );
 };

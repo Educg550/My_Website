@@ -6,12 +6,8 @@ export const Container = styled.div`
   flex: 1;
   max-height: 6.25rem;
 
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-
-  @media (max-width: 650px) {
-    justify-content: center;
-  }
 `;
 
 export const IconBox = styled.div`
@@ -19,7 +15,7 @@ export const IconBox = styled.div`
   justify-content: center;
 
   @media (max-width: 650px) {
-    display: none;
+    max-height: 30px;
   }
 `;
 
@@ -35,6 +31,12 @@ export const HeaderTitle = styled.h2`
 
 export const Logo = styled.img`
   @media (max-width: 650px) {
+    display: none;
+  }
+`;
+
+export const RemainBox = styled.div`
+  @media (min-width: 650px) {
     display: none;
   }
 `;

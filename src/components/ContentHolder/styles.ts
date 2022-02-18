@@ -9,6 +9,8 @@ export const Container = styled.div`
   gap: 1rem;
   border-radius: 1rem;
 
+  margin: 0 2.25rem;
+
   background: ${(props) => props.theme.colors.secondaryBackground};
 
   @media (max-width: 650px) {
@@ -16,6 +18,7 @@ export const Container = styled.div`
     border-radius: 0;
 
     padding: 2.5rem 2rem;
+    margin: 0;
   }
 `;
 
@@ -28,4 +31,8 @@ export const TitleBox = styled.div`
 
   background-color: ${(props) => props.theme.colors.text};
   border-radius: 15px;
+
+  @media (max-width: 650px) {
+    align-self: center;
+  }
 `;

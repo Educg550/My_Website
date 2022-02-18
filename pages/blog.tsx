@@ -9,6 +9,7 @@ import { Header } from "../src/components/Header";
 import Footer from "../src/components/Footer";
 
 import { PostProps } from "./posts/[id]";
+import styled from "styled-components";
 
 interface BlogProps {
   posts: PostProps[];
@@ -25,29 +26,42 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
+const CardsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 2.5rem;
+
+  @media (max-width: 950px) {
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
 const Blog: NextPage<BlogProps> = ({ posts }) => {
   return (
     <BackgroundWrapper>
-      <Head headTitle="Blog" />
-
       <Header headerTitle="Blog" />
 
-      <div>
+      <Head headTitle="Blog" />
+
+      <CardsContainer>
         {posts.map((data, key) => {
           // a "key" é o próprio slug
           return (
-            <div key={key}>
-              <BlogCard
-                id={data.id.toString()}
-                slug={data.slug}
-                title={data.title}
-                subtitle={data.subtitle}
-                thumbnail={data.thumbnail}
-              />
-            </div>
+            <BlogCard
+              key={key}
+              id={data.id.toString()}
+              slug={data.slug}
+              title={data.title}
+              cardText={data.cardText}
+              thumbnail={data.thumbnail}
+            />
           );
         })}
-      </div>
+      </CardsContainer>
 
       <Footer />
     </BackgroundWrapper>
