@@ -1,14 +1,14 @@
 import { NextPage } from "next";
 import { GetStaticProps } from "next";
 
-import Head from "../src/infra/components/Head";
-import { BackgroundWrapper } from "../src/components/BackgroundWrapper";
-import { BlogCard } from "../src/components/BlogCard";
-import { Header } from "../src/components/Header";
+import Head from "../../src/infra/components/Head";
+import { BackgroundWrapper } from "../../src/components/BackgroundWrapper";
+import { BlogCard } from "../../src/components/BlogCard";
+import { Header } from "../../src/components/Header";
 
-import Footer from "../src/components/Footer";
+import Footer from "../../src/components/Footer";
 
-import { PostProps } from "./posts/[id]";
+import { PostProps } from "./[id]";
 import styled from "styled-components";
 
 interface BlogProps {
@@ -30,14 +30,12 @@ const CardsContainer = styled.div`
   display: flex;
   flex-direction: column;
 
+  justify-content: center;
+  align-items: center;
+
   width: 100%;
 
   gap: 2.5rem;
-
-  @media (max-width: 950px) {
-    justify-content: center;
-    align-items: center;
-  }
 `;
 
 const Blog: NextPage<BlogProps> = ({ posts }) => {
@@ -48,19 +46,21 @@ const Blog: NextPage<BlogProps> = ({ posts }) => {
       <Head headTitle="Blog" />
 
       <CardsContainer>
-        {posts.map((data, key) => {
-          // a "key" é o próprio slug
-          return (
-            <BlogCard
-              key={key}
-              id={data.id.toString()}
-              slug={data.slug}
-              title={data.title}
-              cardText={data.cardText}
-              thumbnail={data.thumbnail}
-            />
-          );
-        })}
+        {posts
+          .slice(0)
+          .reverse()
+          .map((data, key) => {
+            // a "key" é o próprio slug
+            return (
+              <BlogCard
+                key={key}
+                id={data.id.toString()}
+                slug={data.slug}
+                title={data.title}
+                cardText={data.cardText}
+              />
+            );
+          })}
       </CardsContainer>
 
       <Footer />

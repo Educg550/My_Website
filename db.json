@@ -11,9 +11,7 @@
         "Foi uma longa jornada até descobrirmos o potencial que a hiena poderia demonstrar aos seus usuários e desenvolvedores.",
         "Esperamos que gostem do App, a Risum Corporation agradece pelo seu apoio. Risos ;).",
         "OBS: Em breve traremos novidades ao aplicativo e seguiremos com seu desenvolvimento para deixá-lo ainda mais charmoso e atrativo para nossos usuários :D. Fiquem ligados no nosso repositório do GitHub (link no cabeçalho da página)."
-      ],
-      "thumbnail": "/images/posts/1-thumbnail.png",
-      "cover": "/images/posts/1-cover.png"
+      ]
     },
 
     {
@@ -23,13 +21,26 @@
       "cardText": "Aplicativo simples que estima perdas e ganhos (PnL) com base nas operações diárias do usuário investidor",
       "paragraphs": [
         "Depois de estudar por algum tempo o mercado de investimentos, seja ele de ações, criptomoedas ou mesmo renda fixa, percebi que muitos não tem a noção de como calcular seus ganhos ou projetar o crescimento de seu patrimônio à longo prazo.",
-        "Pensando nisso, decidi colocar esse projeto em prática juntamente ao @YesManic, no intuito de ajudar nos cálculos projetados para determinado período de investimento (e também para estudarmos juntos o desenvolvimento dessa aplicação na prática).",
+        "Pensando nisso, decidi colocar esse projeto em prática juntamente ao <a href='https://github.com/yesmanic' target='_blank'>@yesmanic</a>, no intuito de ajudar nos cálculos projetados para determinado período de investimento (e também para estudarmos juntos o desenvolvimento dessa aplicação na prática).",
         "Por exemplo, digamos que quero investir inicialmente R$50,00 e render essa quantia ao longo de 60 dias com uma porcentagem de lucro de 3% ao dia (imaginando que estejamos tratando do 'day trade'). Uma vez informados esses dados, o programa basicamente funcionará como uma calculadora de juros compostos, estimando o patrimônio final do usuário e os potenciais ganhos com as transações",
         "Além disso, pensamos em inserir também a cotação de diversas moedas exibidas em tempo real, no intuito de manter nossos usuários sempre preparados para possíveis negociações 🙂.",
-        "O projeto ainda está em fase de desenvolvimento e pode ser acompanhado pelo GitHub (link no cabeçalho da página)."
-      ],
-      "thumbnail": "/images/posts/2-thumbnail.png",
-      "cover": "/images/posts/2-cover.png"
+        "O projeto ainda está em fase de desenvolvimento e pode ser acompanhado <a href='https://github.com/Educg550/BouncyTrader' target='_blank'>através deste repositório</a>."
+      ]
+    },
+
+    {
+      "id": 3,
+      "slug": "google-seo",
+      "title": "Como aplicar SEO em um Website - Utilizando ferramentas do Google",
+      "cardText": "Entenda como funciona o serviço de indexação da gigante corporativa e como utilizá-lo à seu favor",
+      "paragraphs": [
+        "Ultimamente, o termo Search Engine Optimization, ou simplesmente SEO, vem se difundindo e ganhando visibilidade conforme as páginas Web e os negócios online vêm crescendo com o avanço da tecnologia da informação. Basicamente, todas as informações que vemos de um site ao pesquisá-lo no Google, por exemplo, são previamente indexadas por robôs da empresa, especializados na busca e listagem de páginas novas, modificadas ou excluídas.",
+        "Sabendo isso, o SEO “On Page” consiste, justamente, no conjunto de esforços que devem ser aplicados para otimizar as suas páginas na web e dominar os algoritmos por trás dos mecanismos de busca. Deixando a enrolação de lado, vamos ao que de fato nos interessa.",
+        "<Title>Title Tag</Title><br />A Title Tag é o que define o “nome” de uma página, e representa exatamente aquilo que nos é mostrado quando pesquisamos algum site específico em um buscador. O objetivo principal dessa tag é representar de forma clara e rápida aos robôs indexadores (e claro, aos leitores) o conteúdo principal daquela página. Por isso, é importante sempre preencher a tag de título com palavras-chave e informação breve sobre o conteúdo do Website, além de, claro, focar em assuntos de interesse público que possam atrair novos usuários à sua página.",
+        "<Title>Meta Description</Title><br />Mesmo sendo tão importantes quanto a Title Tag, muitas vezes as Meta Tags são subestimadas e não recebem a devida atenção de que precisam. Sendo responsáveis principalmente pela leitura de informações pelos robôs, a tag Meta Description possui suma importância na descrição da sua página, de forma um pouco mais aprofundada que a Title Tag. Digamos que a Meta Description age como uma espécie de “manchete” de jornal para a sua página Web, e é essencial na validação e no destaque de seu site.",
+        "<Title>Indexando seu site pelo Google Search Console</Title><br />Finalmente, temos a ferramenta <a href=’https://search.google.com/search-console/welcome’ target=’_blank’>Google Search Console</a>, que ajuda os desenvolvedores a promoverem manualmente uma análise da sua página pelos robôs. Tendo tudo isso em mente e já com seu site no ar, basta inserir seu domínio na ferramenta e anexar um arquivo html fornecido pela ferramenta no seu projeto. Tendo isso feito, os robôs vasculharão sua página e analisarão todos os tópicos abordados até o momento.",
+        "Se tudo correr como o esperado, sua página logo será indexada nos resultados de pesquisa e poderá facilmente ser encontrada por pessoas interessadas no seu Website. Simples, não? :)."
+      ]
     }
   ]
 }

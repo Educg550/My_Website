@@ -9,8 +9,10 @@ export const Container = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 14rem;
-  height: 14rem;
+  width: 18vw;
+  height: auto;
+
+  max-width: 17rem;
 
   @media (max-width: 650px) {
     width: 5rem;

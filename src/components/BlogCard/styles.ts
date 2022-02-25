@@ -4,18 +4,18 @@ export const Container = styled.div`
   display: flex;
   flex: 1;
 
+  justify-content: center;
+
   width: 100%;
+  max-width: 80rem;
   border-radius: 3rem;
 
   gap: 1rem;
-
-  margin-bottom: 1.5rem;
 
   background: ${(props) => props.theme.colors.secondaryBackground};
 
   @media (max-width: 950px) {
     flex-direction: column;
-    margin: 0 2rem;
 
     max-width: 60vw;
   }
@@ -39,11 +39,7 @@ export const TextBox = styled.div`
 
   gap: 1.25rem;
 
-  :first-child {
-    gap: 0.75rem;
-  }
-
   @media (max-width: 950px) {
-    padding: 0 2rem 2rem 2rem;
+    padding: 2rem;
   }
 `;

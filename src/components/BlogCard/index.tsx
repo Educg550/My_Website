@@ -12,8 +12,6 @@ interface BlogCardProps {
   slug: string;
   title: string;
   cardText: string;
-
-  thumbnail: string; // Thumb src
 }
 
 export const BlogCard: React.FC<BlogCardProps> = ({
@@ -21,13 +19,12 @@ export const BlogCard: React.FC<BlogCardProps> = ({
   slug,
   title,
   cardText,
-  thumbnail,
 }) => {
   return (
-    <Link href={`/posts/${id}`}>
+    <Link href={`/blog/${id}`}>
       <a>
         <Container>
-          <Thumbnail src={thumbnail} />
+          <Thumbnail src={`images/posts/${id.toString()}-thumbnail.png`} />
 
           <TextBox>
             <div>

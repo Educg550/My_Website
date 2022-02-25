@@ -7,7 +7,6 @@ import { CoverImage } from "../../src/components/CoverImage";
 import Footer from "../../src/components/Footer";
 import { Header } from "../../src/components/Header";
 import { Text } from "../../src/components/Text";
-import { Title } from "../../src/components/Title";
 import Head from "../../src/infra/components/Head";
 
 export interface PostProps {
@@ -16,9 +15,6 @@ export interface PostProps {
   title: string;
   cardText: string;
   paragraphs: string[];
-
-  thumbnail: string; // Thumb src
-  cover: string; // Cover src
 }
 
 interface PostPageProps {
@@ -66,12 +62,16 @@ const Post: NextPage<PostPageProps> = ({ post }) => {
       <Header headerTitle={formattedTitle} />
 
       <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
-        <CoverImage src={post.cover} />
+        <CoverImage src={`/images/posts/${post.id.toString()}-cover.png`} />
         <ContentHolder title={post.title}>
           {post.paragraphs.map((data, key) => {
             return (
               <div key={key}>
-                <Text style={textFormat}>{data}</Text>
+                <Text
+                  style={textFormat}
+                  // Usado para aproveitar tags específicas no db.json
+                  dangerouslySetInnerHTML={{ __html: data }}
+                />
               </div>
             );
           })}

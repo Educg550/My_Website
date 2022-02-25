@@ -7,15 +7,13 @@ export const Container = styled.div`
 
   padding: 2.5rem 3.5rem;
   gap: 1rem;
-  border-radius: 1rem;
 
-  margin: 0 2.25rem;
+  margin: 0 -2.25rem;
 
   background: ${(props) => props.theme.colors.secondaryBackground};
 
   @media (max-width: 650px) {
     width: 100%;
-    border-radius: 0;
 
     padding: 2.5rem 2rem;
     margin: 0;
