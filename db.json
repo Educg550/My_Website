@@ -34,15 +34,35 @@
       "title": "Como aplicar SEO em um Website - Utilizando ferramentas do Google",
       "cardText": "Entenda como funciona o serviço de indexação da gigante corporativa e como utilizá-lo à seu favor",
       "paragraphs": [
-        "Ultimamente, o termo Search Engine Optimization, ou simplesmente SEO, vem se difundindo e ganhando visibilidade conforme as páginas Web e os negócios online vêm crescendo com o avanço da tecnologia da informação. Basicamente, todas as informações que vemos de um site ao pesquisá-lo no Google, por exemplo, são previamente indexadas por robôs da empresa, especializados na busca e listagem de páginas novas, modificadas ou excluídas.",
-        "Sabendo isso, o SEO “On Page” consiste, justamente, no conjunto de esforços que devem ser aplicados para otimizar as suas páginas na web e dominar os algoritmos por trás dos mecanismos de busca. Deixando a enrolação de lado, vamos ao que de fato nos interessa.",
+        "Ultimamente, o termo <strong>Search Engine Optimization</strong>, ou simplesmente <strong>SEO</strong>, vem se difundindo e ganhando visibilidade conforme as páginas Web e os negócios online vêm crescendo com o avanço da tecnologia da informação. Basicamente, todas as informações que vemos de um site ao pesquisá-lo no Google, por exemplo, são previamente indexadas por robôs da empresa, especializados na busca e listagem de páginas novas, modificadas ou excluídas.",
+        "Sabendo isso, o <strong>SEO “On Page”</strong> consiste, justamente, no conjunto de esforços que devem ser aplicados para otimizar as suas páginas na web e dominar os algoritmos por trás dos mecanismos de busca. Deixando a enrolação de lado, vamos ao que de fato nos interessa.",
         "<h3>Title Tag</h3>",
-        "A Title Tag é o que define o “nome” de uma página, e representa exatamente aquilo que nos é mostrado quando pesquisamos algum site específico em um buscador. O objetivo principal dessa tag é representar de forma clara e rápida aos robôs indexadores (e claro, aos leitores) o conteúdo principal daquela página. Por isso, é importante sempre preencher a tag de título com palavras-chave e informação breve sobre o conteúdo do Website, além de, claro, focar em assuntos de interesse público que possam atrair novos usuários à sua página.",
+        "A <strong>Title Tag</strong> é o que define o “nome” de uma página, e representa exatamente aquilo que nos é mostrado quando pesquisamos algum site específico em um buscador. O objetivo principal dessa tag é representar de forma clara e rápida aos robôs indexadores (e claro, aos leitores) o conteúdo principal daquela página. Por isso, é importante sempre preencher a tag de título com palavras-chave e informação breve sobre o conteúdo do Website, além de, claro, focar em assuntos de interesse público que possam atrair novos usuários à sua página.",
         "<h3>Meta Description</h3>",
-        "Mesmo sendo tão importantes quanto a Title Tag, muitas vezes as Meta Tags são subestimadas e não recebem a devida atenção de que precisam. Sendo responsáveis principalmente pela leitura de informações pelos robôs, a tag Meta Description possui suma importância na descrição da sua página, de forma um pouco mais aprofundada que a Title Tag. Digamos que a Meta Description age como uma espécie de “manchete” de jornal para a sua página Web, e é essencial na validação e no destaque de seu site.",
+        "Mesmo sendo tão importantes quanto a <strong>Title Tag</strong>, muitas vezes as <strong>Meta Tags</strong> são subestimadas e não recebem a devida atenção de que precisam. Sendo responsáveis principalmente pela leitura de informações pelos robôs, a tag Meta Description possui suma importância na descrição da sua página, de forma um pouco mais aprofundada que a Title Tag. Digamos que a <strong>Meta Description</strong> age como uma espécie de “manchete” de jornal para a sua página Web, e é essencial na validação e no destaque de seu site.",
         "<h3>Indexando seu site pelo Google Search Console</h3>",
         "Finalmente, temos a ferramenta <a href='https://search.google.com/search-console/welcome' target='_blank'>Google Search Console</a>, que ajuda os desenvolvedores a promoverem manualmente uma análise da sua página pelos robôs. Tendo tudo isso em mente e já com seu site no ar, basta inserir seu domínio na ferramenta e anexar um arquivo html fornecido pela ferramenta no seu projeto. Tendo isso feito, os robôs vasculharão sua página e analisarão todos os tópicos abordados até o momento.",
-        "Se tudo correr como o esperado, sua página logo será indexada nos resultados de pesquisa e poderá facilmente ser encontrada por pessoas interessadas no seu Website. Simples, não? :)."
+        "Se tudo correr como o esperado, sua página logo será indexada nos resultados de pesquisa e poderá facilmente ser encontrada através da pesquisa do Google por pessoas interessadas no seu Website. Simples, não? :)."
+      ]
+    },
+
+    {
+      "id": 4,
+      "slug": "engenharia-social",
+      "title": "Engenharia Social em TI - Principais estratégias dos golpistas",
+      "cardText": "Entenda a engenharia social como um todo e o motivo dela ser potencialmente perigosa com o advento da tecnologia",
+      "paragraphs": [
+        "A Engenharia Social é uma das técnicas utilizadas por Crackers para obter acesso não autorizado a sistemas, redes ou informações com grande valor estratégico para as organizações. Os Crackers que utilizam desta técnica são conhecidos como <strong>“Engenheiros Sociais”</strong>.",
+        "Nos crimes virtuais, esses golpes geralmente atingem pessoas desavisadas ou sem muita experiência no mundo virtual. As vítimas podem ter desde seus dados roubados até mesmo seus computadores infectados com vírus. Além disso, os ataques dos engenheiros sociais podem acontecer tanto online quanto por telefone ou outros tipos de comunicação.",
+        "Alguns tipos de engenharia social podem ser destacados, sendo que todos induzem de alguma forma as pessoas a algum <strong>erro comum</strong>:",
+        "<h3>Quid pro quo</h3>",
+        "O <strong>“Quid pro quo”</strong> é o método que consiste em obter de forma indireta informações pessoais das vítimas levando em conta um contexto favorável ao ataque. No âmbito da computação, podem-se citar os <strong>“scarewares”</strong>, onde uma mensagem promete aos usuários de computador uma atualização para cuidar de um problema de segurança urgente quando, na verdade, o próprio comunicado é a ameaça.",
+        "<h3>Phishing</h3>",
+        "O <strong>“phishing”</strong>, uma das mais utilizadas técnicas e possivelmente a mais conhecida dessa lista, consiste na falsa identificação dos atacantes, que normalmente assumem papéis de empresas conhecidas na tentativa de enganar possíveis usuários de serviços das companhias. Normalmente os criminosos tentam se passar por instituições confiáveis, copiando o layout de um e-mail corporativo. Uma rápida checagem do endereço remetente, porém, mostra que se trata de um golpe, já que e-mails de empresas sempre vem por credenciais específicas — mas um usuário desavisado pode cair no golpe.",
+        "<h3>Spamming</h3>",
+        "Por último, mas não menos importante, o <strong>“spamming”</strong> é uma técnica que consiste na invasão de contas alheias e envio indiscriminado de mensagens enganosas aos conhecidos do proprietário vitimizado. Geralmente são anexados arquivos maliciosos na tentativa de roubar informações valiosas das posteriores vítimas.",
+        "<h3>Conclusão</h3>",
+        "Tendo esses tópicos em vista, é possível concluir que a <strong>Cyber Segurança</strong> é um tópico extremamente delicado, e tratar dele como um tabu com certeza não é a abordagem correta. Por isso, vale muito a pena estudar e manter-se ciente dos perigos envolvidos nas atividades online, uma vez que a <strong>Engenharia Social</strong> pode ser inclusa nos mais diversos tipos de mídia pela internet, e claro, o que nunca faltarão são técnicas para enganar os outros online."
       ]
     }
   ]

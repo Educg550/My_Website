@@ -50,7 +50,7 @@ const Blog: NextPage<BlogProps> = ({ posts }) => {
           .slice(0)
           .reverse()
           .map((data, key) => {
-            // a "key" é o próprio slug
+            // a "key" é o próprio [id]
             return (
               <BlogCard
                 key={key}
