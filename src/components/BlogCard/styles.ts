@@ -23,6 +23,8 @@ export const Container = styled.div`
 
 export const Thumbnail = styled.img`
   height: 15.5rem;
+  max-width: 15.5rem;
+
   border-radius: 3rem 0 0 3rem;
 
   object-fit: cover;

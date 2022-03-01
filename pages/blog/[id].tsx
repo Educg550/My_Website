@@ -62,7 +62,10 @@ const Post: NextPage<PostPageProps> = ({ post }) => {
       <Header headerTitle={formattedTitle} />
 
       <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
-        <CoverImage src={`/images/posts/${post.id.toString()}-cover.png`} />
+        <CoverImage
+          src={`/images/posts/${post.id.toString()}-cover.png`}
+          alt="post-cover"
+        />
         <ContentHolder title={post.title}>
           {post.paragraphs.map((data, key) => {
             return (

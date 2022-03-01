@@ -29,7 +29,10 @@ export const ProfileInfo = () => {
   return (
     <Container>
       <MainInfoBox>
-        <ProfilePicture src="https://avatars.githubusercontent.com/u/47800334" />
+        <ProfilePicture
+          src="https://avatars.githubusercontent.com/u/47800334"
+          alt="profile-picture"
+        />
         <InfoBox>
           <Title>Olá, eu sou o Eduardo! 👋</Title>
           <GraySubtitle>

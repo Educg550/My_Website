@@ -28,7 +28,18 @@ const Home: NextPage = () => {
 
   return (
     <BackgroundWrapper>
-      <Head headTitle="Home" />
+      <Head headTitle="Home">
+        <meta
+          name="description"
+          content="@Educg550 | Desenvolvedor Front-end Web e Mobile aberto à novas experiências e focado na criação de designs responsivos e elegantes para o seu projeto."
+        />
+        <meta name="robots" content="index, nofollow" />
+        <meta
+          name="google-site-verification"
+          content="bnFiq7Ofpl1Y8vPNcoh99VpBJKftWnARrEdI_fPwNhA"
+        />
+        <link rel="canonical" href="https://doge-dev.vercel.app/" />
+      </Head>
 
       <Header headerTitle="Home" />
 

@@ -24,7 +24,10 @@ export const BlogCard: React.FC<BlogCardProps> = ({
     <Link href={`/blog/${id}`}>
       <a>
         <Container>
-          <Thumbnail src={`images/posts/${id.toString()}-thumbnail.png`} />
+          <Thumbnail
+            src={`images/posts/${id.toString()}-thumbnail.png`}
+            alt="post-thumbnail"
+          />
 
           <TextBox>
             <div>
