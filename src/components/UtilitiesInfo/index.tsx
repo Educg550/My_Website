@@ -31,11 +31,11 @@ export const UtilitiesInfo: React.FC = () => {
       </TitleBox>
 
       <UtilitiesBox>
-        <Image src="images/figma.png" subtitle="Figma" />
-        <Image src="images/vsCode.png" subtitle="Visual Studio Code" />
-        <Image src="images/manjaro.png" subtitle="KDE Neon" />
-        <Image src="images/github.png" subtitle="GitHub" />
-        <Image src="images/canva.webp" subtitle="Canva" />
+        <Image src="images/figma.png" alt="Figma" />
+        <Image src="images/vsCode.png" alt="Visual Studio Code" />
+        <Image src="images/manjaro.png" alt="KDE Neon" />
+        <Image src="images/github.png" alt="GitHub" />
+        <Image src="images/canva.webp" alt="Canva" />
       </UtilitiesBox>
     </Container>
   );

@@ -3,14 +3,14 @@ import { GraySubtitle } from "../GraySubtitle";
 
 interface ImageProps {
   src: string;
-  subtitle?: string;
+  alt?: string;
 }
 
-export const Image: React.FC<ImageProps> = ({ src, subtitle }) => {
+export const Image: React.FC<ImageProps> = ({ src, alt }) => {
   return (
     <Container>
-      <Img src={src} />
-      <GraySubtitle>{subtitle}</GraySubtitle>
+      <Img src={src} alt={alt} />
+      <GraySubtitle>{alt}</GraySubtitle>
     </Container>
   );
 };

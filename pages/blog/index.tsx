@@ -8,7 +8,7 @@ import { Header } from "../../src/components/Header";
 
 import Footer from "../../src/components/Footer";
 
-import { PostProps } from "./[id]";
+import { PostProps } from "./[slug]";
 import styled from "styled-components";
 
 interface BlogProps {
@@ -49,15 +49,15 @@ const Blog: NextPage<BlogProps> = ({ posts }) => {
         {posts
           .slice(0)
           .reverse()
-          .map((data, key) => {
+          .map(post => {
             // a "key" é o próprio [id]
             return (
               <BlogCard
-                key={key}
-                id={data.id.toString()}
-                slug={data.slug}
-                title={data.title}
-                cardText={data.cardText}
+                key={post.id}
+                id={post.id.toString()}
+                slug={post.slug}
+                title={post.title}
+                cardText={post.cardText}
               />
             );
           })}

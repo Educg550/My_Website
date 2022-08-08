@@ -40,10 +40,15 @@ export const TextBox = styled.div`
   display: flex;
   flex-direction: column;
   padding: 1.5rem 0;
-
+  
   gap: 1.25rem;
-
+  
   @media (max-width: 950px) {
     padding: 2rem;
   }
-`;
+  `;
+
+export const CardTextBox = styled.div`
+  flex: 1;
+  padding-right: 1.25rem;
+`

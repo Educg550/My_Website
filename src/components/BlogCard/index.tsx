@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container, TextBox, Thumbnail } from "./styles";
+import { Container, TextBox, Thumbnail, CardTextBox } from "./styles";
 import { Title } from "../Title";
 import { Text } from "../Text";
 
@@ -21,7 +21,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({
   cardText,
 }) => {
   return (
-    <Link href={`/blog/${id}`}>
+    <Link href={`/blog/${slug}`} key={id}>
       <a>
         <Container>
           <Thumbnail
@@ -37,7 +37,9 @@ export const BlogCard: React.FC<BlogCardProps> = ({
               </GraySubtitle>
             </div>
 
-            <Text>{cardText}</Text>
+            <CardTextBox>
+              <Text>{cardText}</Text>
+            </CardTextBox>
           </TextBox>
         </Container>
       </a>
