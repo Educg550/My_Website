@@ -1,14 +1,37 @@
-export default function Home() {
+import { About } from "@/components/sections/about";
+import { Contact } from "@/components/sections/contact";
+import { Contributions } from "@/components/sections/contributions";
+import { Extensions } from "@/components/sections/extensions";
+import { Hero } from "@/components/sections/hero";
+import { Osi } from "@/components/sections/osi";
+import { Stack } from "@/components/sections/stack";
+import { StatsSection } from "@/components/sections/stats";
+import { Footer } from "@/components/ui/footer";
+import { Nav } from "@/components/ui/nav";
+import featured from "@/data/featured.json";
+import { getContributedUpstreams, getOsiRepos, getStats } from "@/lib/github";
+
+export default async function Home() {
+  const [upstreams, osi] = await Promise.all([
+    getContributedUpstreams(),
+    getOsiRepos(featured.slugs),
+  ]);
+  const stats = await getStats(upstreams, osi.featured, osi.pinned);
+
   return (
-    <main className="min-h-screen bg-mk-bg text-mk-fg flex flex-col items-center justify-center gap-8 p-8">
-      <h1 className="font-display italic text-6xl text-mk-fg">Eduardo Guedes.</h1>
-      <p className="text-mk-fg-mute max-w-md text-center">
-        Smoke-test: <span className="font-display italic text-mk-pink">display italic</span> + mono
-        body. Ligatures below should fuse <code>=&gt;</code>, <code>&gt;=</code>, <code>!==</code>.
-      </p>
-      <pre className="bg-mk-bg-elev border border-mk-border px-4 py-3 text-mk-green">
-        {`const ok = (x) => x >= 0 && x !== null;`}
-      </pre>
-    </main>
+    <>
+      <Nav />
+      <main className="flex flex-col">
+        <Hero />
+        <About />
+        <Stack />
+        <Contributions />
+        <Osi />
+        <Extensions />
+        <StatsSection stats={stats} />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }
