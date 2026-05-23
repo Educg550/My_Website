@@ -7,6 +7,7 @@ import { Osi } from "@/components/sections/osi";
 import { Stack } from "@/components/sections/stack";
 import { StatsSection } from "@/components/sections/stats";
 import { Footer } from "@/components/ui/footer";
+import { Mesh } from "@/components/ui/mesh";
 import { Nav } from "@/components/ui/nav";
 import featured from "@/data/featured.json";
 import { getContributedUpstreams, getOsiRepos, getStats } from "@/lib/github";
@@ -20,6 +21,7 @@ export default async function Home() {
 
   return (
     <>
+      <Mesh />
       <Nav />
       <main className="flex flex-col">
         <Hero />
