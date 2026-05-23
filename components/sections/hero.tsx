@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { CodeBlock } from "@/components/ui/code-block";
-import { TerminalLine } from "@/components/ui/terminal-line";
+import { TypedLine } from "@/components/ui/typed-line";
 import { getProfile } from "@/lib/github";
 
 export async function Hero() {
@@ -23,7 +23,10 @@ export async function Hero() {
           <p className="font-mono text-mk-fg-mute max-w-md">
             Software engineer · open-source contributor · VS Code extension author.
           </p>
-          <TerminalLine command="whoami" />
+          <div className="font-mono text-sm flex items-baseline gap-2 text-mk-fg-mute">
+            <span className="text-mk-green select-none">$</span>
+            <TypedLine text="whoami" className="text-mk-fg" />
+          </div>
           <CodeBlock>
             {`> ${profile.name ?? profile.login}
 > ${profile.bio ?? "Software engineer."}
