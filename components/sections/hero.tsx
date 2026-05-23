@@ -54,7 +54,7 @@ export async function Hero() {
   github:    "@${profile.login}",
   repos:     ${profile.publicRepos},
   followers: ${profile.followers},
-  stack:     ["TS", "Go", "Web"],
+  stack:     ["Python", "TS", "Backend", "AI"],
 };`}
           <div className="mt-4 flex items-center gap-3">
             <Image

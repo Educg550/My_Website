@@ -24,12 +24,17 @@
       "items": [
         { "name": "VS Code", "color": "#007ACC" },
         { "name": "Neovim", "color": "#A6E22E" },
-        { "name": "Docker", "color": "#2496ED" }
+        { "name": "Git", "color": "#F05032" }
       ]
     },
     {
-      "label": "Data",
-      "items": [{ "name": "PostgreSQL", "color": "#336791" }]
+      "label": "DevOps & Infra",
+      "items": [
+        { "name": "Docker", "color": "#2496ED" },
+        { "name": "Kubernetes", "color": "#326CE5" },
+        { "name": "Terraform", "color": "#623CE4" },
+        { "name": "Jenkins", "color": "#2496A6" }
+      ]
     }
   ]
 }
