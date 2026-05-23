@@ -1,0 +1,13 @@
+{
+  "email": "eduardo9cruz@outlook.com",
+  "socials": [
+    { "label": "GitHub", "href": "https://github.com/Educg550", "handle": "@Educg550" },
+    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/educg550", "handle": "educg550" },
+    {
+      "label": "Marketplace",
+      "href": "https://marketplace.visualstudio.com/publishers/eduardo.guedes",
+      "handle": "eduardo.guedes"
+    }
+  ],
+  "cv": "/documents/CV.pdf"
+}

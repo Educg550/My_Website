@@ -1,0 +1,35 @@
+{
+  "groups": [
+    {
+      "label": "Languages",
+      "items": [
+        { "name": "Python", "color": "#3572A5" },
+        { "name": "TypeScript", "color": "#3178C6" },
+        { "name": "JavaScript", "color": "#F7DF1E" }
+      ]
+    },
+    {
+      "label": "Frameworks",
+      "items": [
+        { "name": "Next.js", "color": "#F8F8F2" },
+        { "name": "React", "color": "#61DAFB" },
+        { "name": "Node.js", "color": "#A6E22E" },
+        { "name": "FastMCP", "color": "#275CE3" },
+        { "name": "Agno", "color": "#D69027" },
+        { "name": "Tailwind", "color": "#38BDF8" }
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        { "name": "VS Code", "color": "#007ACC" },
+        { "name": "Neovim", "color": "#A6E22E" },
+        { "name": "Docker", "color": "#2496ED" }
+      ]
+    },
+    {
+      "label": "Data",
+      "items": [{ "name": "PostgreSQL", "color": "#336791" }]
+    }
+  ]
+}
