@@ -2,29 +2,32 @@
 
 @theme {
   --color-mk-bg: #272822;
-  --color-mk-bg-elev: #1E1F1C;
-  --color-mk-border: #3E3D32;
-  --color-mk-border-soft: #49483E;
-  --color-mk-fg: #F8F8F2;
-  --color-mk-fg-mute: #75715E;
-  --color-mk-pink: #F92672;
-  --color-mk-green: #A6E22E;
-  --color-mk-cyan: #66D9EF;
-  --color-mk-yellow: #E6DB74;
-  --color-mk-orange: #FD971F;
-  --color-mk-purple: #AE81FF;
+  --color-mk-bg-elev: #1e1f1c;
+  --color-mk-border: #3e3d32;
+  --color-mk-border-soft: #49483e;
+  --color-mk-fg: #f8f8f2;
+  --color-mk-fg-mute: #75715e;
+  --color-mk-pink: #f92672;
+  --color-mk-green: #a6e22e;
+  --color-mk-cyan: #66d9ef;
+  --color-mk-yellow: #e6db74;
+  --color-mk-orange: #fd971f;
+  --color-mk-purple: #ae81ff;
 
   --font-display: var(--font-editorial), "Times New Roman", serif;
   --font-mono: var(--font-mono-jb), ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
-html, body {
+html,
+body {
   background: var(--color-mk-bg);
   color: var(--color-mk-fg);
   font-family: var(--font-mono);
   -webkit-font-smoothing: antialiased;
 }
 
-code, pre, .font-mono {
+code,
+pre,
+.font-mono {
   font-feature-settings: "calt", "liga";
 }
