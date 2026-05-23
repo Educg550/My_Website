@@ -1,3 +1,4 @@
+import { CountUp } from "@/components/ui/count-up";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeader } from "@/components/ui/section-header";
 import { UpstreamCard } from "@/components/ui/upstream-card";
@@ -27,15 +28,21 @@ export async function Contributions() {
         <ul className="mt-10 grid grid-cols-1 sm:grid-cols-3 border border-mk-border bg-mk-bg-elev rounded-md overflow-hidden font-mono">
           <li className="p-5 border-b sm:border-b-0 sm:border-r border-mk-border">
             <div className="text-xs uppercase text-mk-fg-mute">PRs merged</div>
-            <div className="font-display italic text-4xl text-mk-green">{totalPrs}</div>
+            <div className="font-display italic text-4xl text-mk-green">
+              <CountUp value={totalPrs} />
+            </div>
           </li>
           <li className="p-5 border-b sm:border-b-0 sm:border-r border-mk-border">
             <div className="text-xs uppercase text-mk-fg-mute">Upstreams touched</div>
-            <div className="font-display italic text-4xl text-mk-cyan">{upstreams.length}</div>
+            <div className="font-display italic text-4xl text-mk-cyan">
+              <CountUp value={upstreams.length} />
+            </div>
           </li>
           <li className="p-5">
             <div className="text-xs uppercase text-mk-fg-mute">Combined stars</div>
-            <div className="font-display italic text-4xl text-mk-yellow">{totalStars}</div>
+            <div className="font-display italic text-4xl text-mk-yellow">
+              <CountUp value={totalStars} />
+            </div>
           </li>
         </ul>
 

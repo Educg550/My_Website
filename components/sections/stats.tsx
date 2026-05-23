@@ -1,3 +1,4 @@
+import { CountUp } from "@/components/ui/count-up";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeader } from "@/components/ui/section-header";
 import type { Stats } from "@/lib/types";
@@ -66,7 +67,9 @@ function Punch({
   return (
     <div className="border border-mk-border bg-mk-bg-elev rounded-md p-5">
       <div className="text-xs uppercase text-mk-fg-mute">{label}</div>
-      <div className={`font-display italic text-4xl mt-1 ${accent}`}>{value}</div>
+      <div className={`font-display italic text-4xl mt-1 ${accent}`}>
+        {typeof value === "number" ? <CountUp value={value} /> : value}
+      </div>
     </div>
   );
 }
