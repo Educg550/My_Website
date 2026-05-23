@@ -1,17 +1,15 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-mk-bg text-mk-fg flex flex-col items-center justify-center gap-4 p-8">
-      <h1 className="text-mk-pink text-4xl">Monokai theme smoke test</h1>
-      <p className="text-mk-fg-mute">
-        bg-mk-bg · text-mk-fg · <span className="text-mk-green">text-mk-green</span> ·{" "}
-        <span className="text-mk-cyan">text-mk-cyan</span> ·{" "}
-        <span className="text-mk-yellow">text-mk-yellow</span> ·{" "}
-        <span className="text-mk-orange">text-mk-orange</span> ·{" "}
-        <span className="text-mk-purple">text-mk-purple</span>
+    <main className="min-h-screen bg-mk-bg text-mk-fg flex flex-col items-center justify-center gap-8 p-8">
+      <h1 className="font-display italic text-6xl text-mk-fg">Eduardo Guedes.</h1>
+      <p className="text-mk-fg-mute max-w-md text-center">
+        Smoke-test: <span className="font-display italic text-mk-pink">display italic</span>{" "}
+        + mono body. Ligatures below should fuse <code>=&gt;</code>, <code>&gt;=</code>,{" "}
+        <code>!==</code>.
       </p>
-      <div className="border border-mk-border bg-mk-bg-elev px-4 py-2">
-        border-mk-border + bg-mk-bg-elev
-      </div>
+      <pre className="bg-mk-bg-elev border border-mk-border px-4 py-3 text-mk-green">
+{`const ok = (x) => x >= 0 && x !== null;`}
+      </pre>
     </main>
   );
 }

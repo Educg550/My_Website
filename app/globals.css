@@ -14,8 +14,8 @@
   --color-mk-orange: #FD971F;
   --color-mk-purple: #AE81FF;
 
-  --font-display: "PP Editorial New", "Times New Roman", serif;
-  --font-mono: "JetBrains Mono", ui-monospace, SF Mono, Menlo, monospace;
+  --font-display: var(--font-editorial), "Times New Roman", serif;
+  --font-mono: var(--font-mono-jb), ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
 html, body {
@@ -23,4 +23,8 @@ html, body {
   color: var(--color-mk-fg);
   font-family: var(--font-mono);
   -webkit-font-smoothing: antialiased;
+}
+
+code, pre, .font-mono {
+  font-feature-settings: "calt", "liga";
 }
