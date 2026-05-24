@@ -29,7 +29,7 @@ export async function getPublisherExtensions(publisher: string): Promise<Extensi
           {
             criteria: [
               { filterType: 8, value: "Microsoft.VisualStudio.Code" },
-              { filterType: 7, value: publisher },
+              { filterType: 10, value: publisher },
             ],
             pageNumber: 1,
             pageSize: 50,
@@ -45,7 +45,9 @@ export async function getPublisherExtensions(publisher: string): Promise<Extensi
     if (!res.ok) return [];
     const json = (await res.json()) as { results?: Array<{ extensions?: RawExt[] }> };
     const rawList = json.results?.[0]?.extensions ?? [];
+    const wanted = publisher.toLowerCase();
     return rawList
+      .filter((r) => r.publisher.publisherName.toLowerCase() === wanted)
       .map<Extension>((r) => {
         const id = `${r.publisher.publisherName}.${r.extensionName}`;
         return {
