@@ -5,7 +5,8 @@
       "items": [
         { "name": "Python", "color": "#3572A5" },
         { "name": "TypeScript", "color": "#3178C6" },
-        { "name": "JavaScript", "color": "#F7DF1E" }
+        { "name": "JavaScript", "color": "#F7DF1E" },
+        { "name": "C++", "color": "#F34B7D" }
       ]
     },
     {
@@ -24,7 +25,9 @@
       "items": [
         { "name": "VS Code", "color": "#007ACC" },
         { "name": "Neovim", "color": "#A6E22E" },
-        { "name": "Git", "color": "#F05032" }
+        { "name": "Git", "color": "#F05032" },
+        { "name": "Claude Code", "color": "#D97757" },
+        { "name": "Linux", "color": "#FCC624" }
       ]
     },
     {
