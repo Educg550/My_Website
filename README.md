@@ -2,6 +2,9 @@
 
 My personal website: a Monokai-themed Next 16 SPA showcasing OSS contributions, solo initiatives and general portfolio.
 
+![Website Landing Page](./images/landing-page.png)
+<sub>Available at https://educg550.vercel.app/</sub>
+
 ## Stack
 Next 16 (App Router, RSC) · TypeScript · Tailwind v4 · Biome · npm · motion · `@vercel/analytics`.
 
@@ -22,8 +25,6 @@ npm run dev
 ## Deployment
 
 Hosted on [Vercel](https://vercel.com); production tracks `main`, PRs get preview URLs automatically.
-
-**One-time setup**: in the Vercel project's *Settings → Environment Variables*, add `GITHUB_TOKEN` (production), and optionally override `GITHUB_USERNAME` and `VSCODE_PUBLISHER`.
 
 **Day-to-day**
 - Push to `main` -> Vercel builds & promotes to production.
