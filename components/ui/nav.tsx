@@ -1,11 +1,13 @@
 import { cn } from "@/lib/cn";
 
 const items = [
-  { num: "01", label: "about", href: "#about" },
-  { num: "02", label: "stack", href: "#stack" },
-  { num: "03", label: "contributions", href: "#contributions" },
-  { num: "04", label: "osi", href: "#osi" },
-  { num: "05", label: "contact", href: "#contact" },
+  { num: "01", label: "hero", href: "#hero" },
+  { num: "02", label: "about", href: "#about" },
+  { num: "03", label: "stack", href: "#stack" },
+  { num: "04", label: "contributions", href: "#contributions" },
+  { num: "05", label: "osi", href: "#osi" },
+  { num: "06", label: "stats", href: "#stats" },
+  { num: "07", label: "contact", href: "#contact" },
 ];
 
 export function Nav({ className }: { className?: string }) {
