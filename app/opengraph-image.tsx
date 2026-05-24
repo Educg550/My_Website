@@ -4,7 +4,7 @@ export const runtime = "edge";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export const alt = "Eduardo Guedes — doge-dev";
+export const alt = "Eduardo Guedes - educg550";
 
 export default async function OG() {
   return new ImageResponse(
@@ -31,7 +31,7 @@ export default async function OG() {
         </div>
       </div>
       <div style={{ fontSize: 22, color: "#66D9EF", fontFamily: "monospace" }}>
-        doge-dev.vercel.app
+        educg550.vercel.app
       </div>
     </div>,
     { ...size },

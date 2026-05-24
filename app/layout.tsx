@@ -18,24 +18,24 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://doge-dev.vercel.app"),
+  metadataBase: new URL("https://educg550.vercel.app"),
   title: {
-    default: "Eduardo Guedes — doge-dev",
-    template: "%s · doge-dev",
+    default: "Eduardo Guedes - educg550",
+    template: "%s · educg550",
   },
   description:
-    "Eduardo Guedes — software engineer. Open-source contributions, solo OSS initiatives, and VS Code extensions.",
+    "Eduardo Guedes - software engineer. Open-source contributions, solo OSS initiatives, and VS Code extensions.",
   authors: [{ name: "Eduardo Guedes", url: "https://github.com/Educg550" }],
   openGraph: {
     type: "website",
-    title: "Eduardo Guedes — doge-dev",
+    title: "Eduardo Guedes - educg550",
     description: "Open-source contributions, initiatives, and VS Code extensions.",
-    url: "https://doge-dev.vercel.app",
-    siteName: "doge-dev",
+    url: "https://educg550.vercel.app",
+    siteName: "educg550",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Eduardo Guedes — doge-dev",
+    title: "Eduardo Guedes - educg550",
     description: "Open-source contributions, initiatives, and VS Code extensions.",
   },
   robots: { index: true, follow: true },

@@ -48,7 +48,7 @@ export async function Contributions() {
 
         {shown.length === 0 ? (
           <p className="mt-10 font-mono text-sm text-mk-fg-mute">
-            No upstream merges visible yet — check back later.
+            No upstream merges visible yet - check back later.
           </p>
         ) : (
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-5">

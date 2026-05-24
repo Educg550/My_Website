@@ -21,7 +21,7 @@ export async function Hero() {
             Eduardo Guedes<span className="text-mk-green">.</span>
           </h1>
           <p className="font-mono text-mk-fg-mute max-w-md">
-            Software engineer · open-source contributor · VS Code extension author.
+            Software engineer · Open-source contributor · AI enthusiast
           </p>
           <div className="font-mono text-sm flex items-baseline gap-2 text-mk-fg-mute">
             <span className="text-mk-green select-none">$</span>

@@ -28,7 +28,7 @@ export function StatsSection({ stats }: Props) {
           <Punch label="Combined stars" value={stats.totalStars} accent="text-mk-yellow" />
           <Punch
             label="Top language"
-            value={stats.topLanguages[0]?.name ?? "—"}
+            value={stats.topLanguages[0]?.name ?? "-"}
             accent="text-mk-pink"
           />
         </div>

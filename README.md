@@ -14,10 +14,10 @@ npm run dev
 ```
 
 ## Commands
-- `npm run dev` — start the dev server
-- `npm run build` — production build
-- `npm run lint` — Biome lint
-- `npm run format` — Biome format (write)
+- `npm run dev` - start the dev server
+- `npm run build` - production build
+- `npm run lint` - Biome lint
+- `npm run format` - Biome format (write)
 
 ## Deployment
 

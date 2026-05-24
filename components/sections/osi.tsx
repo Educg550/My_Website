@@ -35,7 +35,7 @@ export async function Osi() {
           <div className="mt-10">
             <div className="font-mono text-xs text-mk-fg-mute mb-3">
               <span className="text-mk-green">$</span> <span className="text-mk-fg">Featured</span>{" "}
-              — cat data/featured.json
+              - cat data/featured.json
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               <RepoCard repo={feats[0]} variant="big" className="md:col-span-2 md:row-span-2" />
@@ -50,7 +50,7 @@ export async function Osi() {
           <div className="mt-12">
             <div className="font-mono text-xs text-mk-fg-mute mb-3">
               <span className="text-mk-green">$</span>{" "}
-              <span className="text-mk-fg">Also pinned</span> — gh api graphql ... pinnedItems
+              <span className="text-mk-fg">Also pinned</span> - gh api graphql ... pinnedItems
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               {pinned.slice(0, 3).map((r) => (

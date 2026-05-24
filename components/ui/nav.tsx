@@ -21,7 +21,7 @@ export function Nav({ className }: { className?: string }) {
     >
       <ul className="mx-auto max-w-6xl flex items-center gap-4 md:gap-6 px-6 py-3 font-mono text-xs md:text-sm">
         <li className="font-display italic text-mk-fg mr-auto">
-          doge-dev<span className="text-mk-pink">.</span>
+          educg550<span className="text-mk-pink">.</span>
         </li>
         {items.map((it) => (
           <li key={it.href} className="hidden sm:list-item">
