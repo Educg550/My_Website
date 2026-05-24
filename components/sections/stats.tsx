@@ -12,7 +12,7 @@ export function StatsSection({ stats }: Props) {
       <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
         <SectionHeader
           id="stats"
-          num="07"
+          num="06"
           crumb="stats/"
           title={
             <>

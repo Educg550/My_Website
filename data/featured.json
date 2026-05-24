@@ -1,3 +1,4 @@
 {
+  "extensions": [{ "id": "eduardo-guedes.vscode-envoy", "repoSlug": "Educg550/vscode-envoy" }],
   "slugs": []
 }

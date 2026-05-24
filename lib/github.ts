@@ -173,18 +173,6 @@ export async function getPinnedRepos(): Promise<Repo[]> {
   }));
 }
 
-export async function getOsiRepos(
-  featuredSlugs: string[],
-): Promise<{ featured: Repo[]; pinned: Repo[] }> {
-  const [featured, allPinned] = await Promise.all([
-    getFeaturedRepos(featuredSlugs),
-    getPinnedRepos(),
-  ]);
-  const featuredSet = new Set(featuredSlugs.map((s) => s.toLowerCase()));
-  const pinned = allPinned.filter((p) => !featuredSet.has(p.slug.toLowerCase()));
-  return { featured, pinned };
-}
-
 export async function getContributedUpstreams(): Promise<Upstream[]> {
   type SearchItem = {
     number: number;

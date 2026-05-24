@@ -8,7 +8,7 @@ export function Contact() {
       <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
         <SectionHeader
           id="contact"
-          num="08"
+          num="07"
           crumb="contact/"
           title={
             <>

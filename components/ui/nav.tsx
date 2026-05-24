@@ -5,8 +5,7 @@ const items = [
   { num: "02", label: "stack", href: "#stack" },
   { num: "03", label: "contributions", href: "#contributions" },
   { num: "04", label: "osi", href: "#osi" },
-  { num: "05", label: "extensions", href: "#extensions" },
-  { num: "06", label: "contact", href: "#contact" },
+  { num: "05", label: "contact", href: "#contact" },
 ];
 
 export function Nav({ className }: { className?: string }) {

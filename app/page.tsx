@@ -1,7 +1,6 @@
 import { About } from "@/components/sections/about";
 import { Contact } from "@/components/sections/contact";
 import { Contributions } from "@/components/sections/contributions";
-import { Extensions } from "@/components/sections/extensions";
 import { Hero } from "@/components/sections/hero";
 import { Osi } from "@/components/sections/osi";
 import { Stack } from "@/components/sections/stack";
@@ -10,14 +9,19 @@ import { Footer } from "@/components/ui/footer";
 import { Mesh } from "@/components/ui/mesh";
 import { Nav } from "@/components/ui/nav";
 import featured from "@/data/featured.json";
-import { getContributedUpstreams, getOsiRepos, getStats } from "@/lib/github";
+import { getContributedUpstreams, getFeaturedRepos, getPinnedRepos, getStats } from "@/lib/github";
 
 export default async function Home() {
-  const [upstreams, osi] = await Promise.all([
+  const [upstreams, featuredRepos, allPinned] = await Promise.all([
     getContributedUpstreams(),
-    getOsiRepos(featured.slugs),
+    getFeaturedRepos(featured.slugs),
+    getPinnedRepos(),
   ]);
-  const stats = await getStats(upstreams, osi.featured, osi.pinned);
+  const dedupe = new Set(
+    [...featured.slugs, ...featured.extensions.map((e) => e.repoSlug)].map((s) => s.toLowerCase()),
+  );
+  const pinned = allPinned.filter((p) => !dedupe.has(p.slug.toLowerCase()));
+  const stats = await getStats(upstreams, featuredRepos, pinned);
 
   return (
     <>
@@ -29,7 +33,6 @@ export default async function Home() {
         <Stack />
         <Contributions />
         <Osi />
-        <Extensions />
         <StatsSection stats={stats} />
         <Contact />
       </main>
