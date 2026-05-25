@@ -25,7 +25,17 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              cv.pdf
+              cv.en.pdf
+            </a>
+          ) : null}
+          {contact.cv_pt ? (
+            <a
+              href={contact.cv_pt}
+              className="hover:text-mk-cyan"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              cv.pt.pdf
             </a>
           ) : null}
           <span>© {new Date().getFullYear()} Eduardo Guedes</span>

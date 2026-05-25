@@ -2,6 +2,7 @@ import Image from "next/image";
 import { CodeBlock } from "@/components/ui/code-block";
 import { TypedLine } from "@/components/ui/typed-line";
 import { getProfile } from "@/lib/github";
+import contact from "@/data/contact.json";
 
 export async function Hero() {
   const profile = await getProfile();
@@ -40,10 +41,20 @@ export async function Hero() {
               → ./view-contributions
             </a>
             <a
-              href="/documents/CV.pdf"
+              href={contact.cv}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 border border-mk-border text-mk-fg font-mono text-sm px-4 py-2 rounded-md hover:border-mk-cyan hover:text-mk-cyan"
             >
               cat cv.pdf
+            </a>
+            <a
+              href={contact.cv_pt}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-xs text-mk-fg-mute hover:text-mk-cyan self-center"
+            >
+              [pt]
             </a>
           </div>
         </div>
