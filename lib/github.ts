@@ -245,7 +245,10 @@ export async function getStats(
   const upstreamsTouched = upstreams.length;
   const langCounts = new Map<string, number>();
   for (const r of [...ownRepos, ...upstreams]) {
-    if (r.language) langCounts.set(r.language, (langCounts.get(r.language) ?? 0) + 1);
+    if (r.language) {
+      const lang = r.language === "Jupyter Notebook" ? "Python" : r.language;
+      langCounts.set(lang, (langCounts.get(lang) ?? 0) + 1);
+    }
   }
   const topLanguages = Array.from(langCounts.entries())
     .map(([name, count]) => ({ name, count }))

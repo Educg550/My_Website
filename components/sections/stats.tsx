@@ -1,4 +1,5 @@
 import { CountUp } from "@/components/ui/count-up";
+import { LanguageRadar } from "@/components/ui/language-radar";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeader } from "@/components/ui/section-header";
 import type { Stats } from "@/lib/types";
@@ -6,7 +7,6 @@ import type { Stats } from "@/lib/types";
 type Props = { stats: Stats };
 
 export function StatsSection({ stats }: Props) {
-  const max = Math.max(...stats.topLanguages.map((l) => l.count), 1);
   return (
     <Reveal>
       <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
@@ -29,20 +29,9 @@ export function StatsSection({ stats }: Props) {
         </div>
 
         {stats.topLanguages.length > 0 ? (
-          <div className="mt-10">
-            <h3 className="font-mono text-xs uppercase text-mk-fg-mute mb-3">Top languages</h3>
-            <ul className="flex flex-col gap-2">
-              {stats.topLanguages.map((l) => (
-                <li key={l.name} className="flex items-center gap-3 font-mono text-sm text-mk-fg">
-                  <span className="w-32 shrink-0">{l.name}</span>
-                  <span
-                    className="h-2 bg-mk-cyan rounded-sm"
-                    style={{ width: `${(l.count / max) * 100}%` }}
-                  />
-                  <span className="text-mk-fg-mute text-xs">{l.count}</span>
-                </li>
-              ))}
-            </ul>
+          <div className="mt-10 max-w-2xl">
+            <h3 className="font-mono text-xs uppercase text-mk-fg-mute mb-4">Top languages</h3>
+            <LanguageRadar languages={stats.topLanguages} />
           </div>
         ) : null}
       </section>
