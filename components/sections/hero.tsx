@@ -46,7 +46,7 @@ export async function Hero() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 border border-mk-border text-mk-fg font-mono text-sm px-4 py-2 rounded-md hover:border-mk-cyan hover:text-mk-cyan"
             >
-              cat cv.pdf
+              cat resume.pdf
             </a>
             <a
               href={contact.cv_pt}
