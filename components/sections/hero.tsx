@@ -1,8 +1,9 @@
 import Image from "next/image";
 import { CodeBlock } from "@/components/ui/code-block";
+import { type CodeToken, TypedCode } from "@/components/ui/typed-code";
 import { TypedLine } from "@/components/ui/typed-line";
-import { getProfile } from "@/lib/github";
 import contact from "@/data/contact.json";
+import { getProfile } from "@/lib/github";
 
 export async function Hero() {
   const profile = await getProfile();
@@ -60,30 +61,91 @@ export async function Hero() {
         </div>
 
         <CodeBlock filename="identity.ts" className="md:justify-self-end w-full max-w-md">
-          {`const me = {
-  name:      "${profile.name ?? profile.login}",
-  github:    "@${profile.login}",
-  repos:     ${profile.publicRepos},
-  followers: ${profile.followers},
-  stack:     ["Python", "TS", "Backend", "AI"],
-};`}
-          <div className="mt-4 flex items-center gap-3">
+          <TypedCode
+            tokens={
+              [
+                { text: "interface", className: "text-mk-pink" },
+                { text: " Identity", className: "text-mk-green" },
+                { text: " {\n", className: "text-mk-fg" },
+                { text: "  name", className: "text-mk-cyan" },
+                { text: ":      ", className: "text-mk-fg" },
+                { text: "string", className: "text-mk-cyan" },
+                { text: ";\n", className: "text-mk-fg" },
+                { text: "  github", className: "text-mk-cyan" },
+                { text: ":    ", className: "text-mk-fg" },
+                { text: "string", className: "text-mk-cyan" },
+                { text: ";\n", className: "text-mk-fg" },
+                { text: "  repos", className: "text-mk-cyan" },
+                { text: ":     ", className: "text-mk-fg" },
+                { text: "number", className: "text-mk-cyan" },
+                { text: ";\n", className: "text-mk-fg" },
+                { text: "  followers", className: "text-mk-cyan" },
+                { text: ": ", className: "text-mk-fg" },
+                { text: "number", className: "text-mk-cyan" },
+                { text: ";\n", className: "text-mk-fg" },
+                { text: "  stack", className: "text-mk-cyan" },
+                { text: ":     ", className: "text-mk-fg" },
+                { text: "string", className: "text-mk-cyan" },
+                { text: "[]", className: "text-mk-fg" },
+                { text: ";\n", className: "text-mk-fg" },
+                { text: "}\n\n", className: "text-mk-fg" },
+                { text: "const", className: "text-mk-pink" },
+                { text: " me", className: "text-mk-fg" },
+                { text: ":", className: "text-mk-fg" },
+                { text: " Identity", className: "text-mk-green" },
+                { text: " = {\n", className: "text-mk-fg" },
+                { text: "  name", className: "text-mk-cyan" },
+                { text: ":      ", className: "text-mk-fg" },
+                { text: `"${profile.name ?? profile.login}"`, className: "text-mk-yellow" },
+                { text: ",\n", className: "text-mk-fg" },
+                { text: "  github", className: "text-mk-cyan" },
+                { text: ":    ", className: "text-mk-fg" },
+                { text: `"@${profile.login}"`, className: "text-mk-yellow" },
+                { text: ",\n", className: "text-mk-fg" },
+                { text: "  repos", className: "text-mk-cyan" },
+                { text: ":     ", className: "text-mk-fg" },
+                { text: String(profile.publicRepos), className: "text-mk-purple" },
+                { text: ",\n", className: "text-mk-fg" },
+                { text: "  followers", className: "text-mk-cyan" },
+                { text: ": ", className: "text-mk-fg" },
+                { text: String(profile.followers), className: "text-mk-purple" },
+                { text: ",\n", className: "text-mk-fg" },
+                { text: "  stack", className: "text-mk-cyan" },
+                { text: ":     [", className: "text-mk-fg" },
+                { text: '"Python"', className: "text-mk-yellow" },
+                { text: ", ", className: "text-mk-fg" },
+                { text: '"TS"', className: "text-mk-yellow" },
+                { text: ", ", className: "text-mk-fg" },
+                { text: '"Backend"', className: "text-mk-yellow" },
+                { text: ", ", className: "text-mk-fg" },
+                { text: '"AI"', className: "text-mk-yellow" },
+                { text: "],\n", className: "text-mk-fg" },
+                { text: "};", className: "text-mk-fg" },
+              ] satisfies CodeToken[]
+            }
+          />
+          <div className="mt-3 pt-3 border-t border-mk-border flex items-center gap-4">
             <Image
               src={profile.avatarUrl}
               alt={`${profile.login} avatar`}
-              width={56}
-              height={56}
-              className="rounded-full border border-mk-border"
+              width={80}
+              height={80}
+              className="rounded-full border-2 border-mk-cyan/50 shrink-0"
               priority
             />
-            <a
-              href={profile.htmlUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-mk-cyan hover:underline"
-            >
-              github.com/{profile.login}
-            </a>
+            <div className="flex flex-col gap-1 min-w-0">
+              <span className="text-mk-fg font-mono text-sm font-semibold truncate">
+                {profile.name ?? profile.login}
+              </span>
+              <a
+                href={profile.htmlUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-mk-cyan text-sm hover:underline truncate"
+              >
+                github.com/{profile.login}
+              </a>
+            </div>
           </div>
         </CodeBlock>
       </div>
