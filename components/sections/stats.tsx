@@ -26,11 +26,6 @@ export function StatsSection({ stats }: Props) {
           <Punch label="PRs merged" value={stats.totalPrsMerged} accent="text-mk-green" />
           <Punch label="Upstreams" value={stats.upstreamsTouched} accent="text-mk-cyan" />
           <Punch label="Combined stars" value={stats.totalStars} accent="text-mk-yellow" />
-          <Punch
-            label="Top language"
-            value={stats.topLanguages[0]?.name ?? "-"}
-            accent="text-mk-pink"
-          />
         </div>
 
         {stats.topLanguages.length > 0 ? (
